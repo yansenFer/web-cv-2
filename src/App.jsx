@@ -1,11 +1,10 @@
 import "./App.css"
-import { NavigationBar } from "./components"
 import { RouterProvider } from "react-router-dom"
 import { router } from "./route/root"
+
 function App() {
   return (
-    <div className="container w-full h-full max-w-screen max-h-screen">
-      <NavigationBar />
+    <div className="flex flex-col w-full h-full">
       {/* section 1 */}
       <RouterProvider router={router} />
       {/* end section 1 */}
