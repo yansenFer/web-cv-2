@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 /* 
-#606C5D
-#FFF4F4
-#F7E6C4
-#F1C376 */
+#222831
+#393E46
+#00ADB5
+#EEEEEE */
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -14,13 +14,20 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #606C5D;
+  background-color: #222831;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.dot {
+  background-color: #F1C376;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 
