@@ -3,7 +3,12 @@
 import { AiOutlineArrowDown } from "react-icons/ai"
 import { useEffect, useState } from "react"
 import { Parallax, ParallaxLayer } from "@react-spring/parallax"
-import { ProfileImage, HelloThere, NavigationBar } from "../../components"
+import {
+  ProfileImage,
+  HelloThere,
+  NavigationBar,
+  CloudParticel,
+} from "../../components"
 import * as React from "react"
 
 export function HomePage() {
@@ -48,7 +53,7 @@ export function HomePage() {
             </div>
           </ParallaxLayer>
           <ParallaxLayer
-            className="bg-[#00ADB5]"
+            // className="bg-[#00ADB5]"
             offset={1}
             sticky={{ start: 1, end: 5 }}
             speed={0.5}
@@ -59,8 +64,8 @@ export function HomePage() {
           />
           <ParallaxLayer
             offset={1.5}
-            sticky={{ start: 1.5, end: 1.7 }}
-            speed={0.5}
+            sticky={{ start: 1.5, end: 1.9 }}
+            speed={1}
             style={{
               ...alignCenter,
               justifyContent: "center",
@@ -79,7 +84,6 @@ export function HomePage() {
             style={{
               ...alignCenter,
               justifyContent: "start",
-              paddingTop: 70,
             }}
           >
             <div className="flex ml-32 gap-5 flex-col justify-center w-[50%] items-start">
@@ -99,24 +103,19 @@ export function HomePage() {
           </ParallaxLayer>
           <ParallaxLayer
             offset={2.8}
+            className="justify-end"
             sticky={{ start: 3, end: 5 }}
             speed={0.5}
             style={{
               ...alignCenter,
               paddingRight: 100,
-              justifyContent: "end",
             }}
           >
-            {/* <img
-              src={profile1}
-              className="rounded-full rotate-6"
-              width={300}
-              alt="profile1"
-            /> */}
-            <div className="flex mr-40 rounded-full justify-center items-center">
+            <div className="flex mr-24 rounded-full justify-center items-center">
               <ProfileImage />
             </div>
           </ParallaxLayer>
+          <CloudParticel />
         </Parallax>
       </NavigationBar>
     </div>
