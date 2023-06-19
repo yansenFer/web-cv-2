@@ -26,10 +26,10 @@ export const NavigationBar = ({ children }) => {
   return (
     <div className="flex flex-col">
       <div
-        className={`flex top-0 z-10 justify-between items-center w-screen h-16 duration-500 ${
+        className={`flex top-0 z-30 justify-between items-center w-screen h-16 duration-500 ${
           isScrollingDown
             ? "bg-[#FFF4F4] shadow-md shadow-gray-800 fixed rounded-br-full transition-all"
-            : "bg-[#222831] sticky rounded-br-none shadow-gray-800 shadow-md"
+            : "bg-[#222831] sticky rounded-br-none transition-all shadow-md"
         }`}
       >
         {/* start logo */}

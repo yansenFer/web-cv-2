@@ -1,7 +1,7 @@
 import { NavigationBar } from "./NavigationBar"
 import { Root } from "postcss"
-import HelloThere from "./HelloAnimation"
-import ProfileImage from "./CardProfile"
-import { CloudParticel } from "./CloudParticel"
+import ProfileImage from "./homepagecomponents/CardProfile"
+import HelloThere from "./homepagecomponents/HelloAnimation"
+import { CloudParticel } from "./homepagecomponents/CloudParticel"
 
 export { NavigationBar, Root, HelloThere, ProfileImage, CloudParticel }
