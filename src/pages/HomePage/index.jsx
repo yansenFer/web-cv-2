@@ -3,12 +3,8 @@
 import { AiOutlineArrowDown } from "react-icons/ai"
 import { useEffect, useState } from "react"
 import { Parallax, ParallaxLayer } from "@react-spring/parallax"
-import {
-  ProfileImage,
-  HelloThere,
-  NavigationBar,
-  CloudParticel,
-} from "../../components"
+import { NavigationBar } from "../../components"
+import { ProfileImage, HelloThere, CloudParticel } from "../../components"
 import * as React from "react"
 import arrowImage from "../../assets/arrow.png"
 
@@ -33,7 +29,7 @@ export function HomePage() {
   return (
     <div className="flex flex-col w-full">
       <NavigationBar>
-        <Parallax pages={5} style={{ paddingTop: 10 }}>
+        <Parallax pages={10} style={{ paddingTop: 10, zIndex: 20 }}>
           <ParallaxLayer
             offset={0}
             speed={0.1}
@@ -134,10 +130,11 @@ export function HomePage() {
             speed={0.5}
             style={{
               ...alignCenter,
+              width: "80%",
               paddingRight: 100,
             }}
           >
-            <div className="absolute right-[25%] top-0">
+            <div className="fixed top-0 xl:mr-20 lg:mr-32 md:mr-32 ">
               <img
                 src={arrowImage}
                 alt="gambarArrow"
@@ -148,12 +145,44 @@ export function HomePage() {
             </div>
             <span
               style={rgbText}
-              className="text-4xl flex flex-col absolute right-[27%] top-[25%] font-black"
+              className="text-4xl flex flex-col fixed xl:mr-36 lg:mr-48 md:mr-32 top-[25%] font-black"
             >
               <span>IT'S ME</span>
               <span>Click Photo</span>
             </span>
           </ParallaxLayer>
+          <ParallaxLayer
+            offset={6}
+            className="justify-end"
+            sticky={{ start: 6, end: 6.4 }}
+            speed={0.1}
+            style={{
+              ...alignCenter,
+              paddingTop: "10%",
+              paddingLeft: "1%",
+              zIndex: 10,
+            }}
+          >
+            <div
+              className={`flex-col items-start justify-start h-screen flex w-full`}
+            >
+              <span style={rgbText} className="text-5xl font-black">
+                Education
+              </span>
+            </div>
+          </ParallaxLayer>
+          <ParallaxLayer
+            offset={6.2}
+            className="justify-end"
+            sticky={{ start: 6.2, end: 6.7 }}
+            speed={0.5}
+            style={{
+              ...alignCenter,
+              justifyContent: "center",
+              backgroundImage: `url()`,
+              backgroundSize: "cover",
+            }}
+          ></ParallaxLayer>
         </Parallax>
       </NavigationBar>
     </div>

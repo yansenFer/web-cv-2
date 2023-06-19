@@ -16,11 +16,11 @@
 }
 
 .back {
-  background-image: url(../../assets/profile1.jpg);
+  background-image: url(../../../assets/profile1.jpg);
 }
 
 .front {
-  background-image: url(../../assets/profile2.jpg);
+  background-image: url(../../../assets/profile2.jpg);
 }
 
 .container {
