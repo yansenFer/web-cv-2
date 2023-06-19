@@ -10,6 +10,7 @@ import {
   CloudParticel,
 } from "../../components"
 import * as React from "react"
+import arrowImage from "../../assets/arrow.png"
 
 export function HomePage() {
   const [arrow, setArrow] = useState(false)
@@ -21,6 +22,13 @@ export function HomePage() {
     },
     !arrow ? 2000 : 0
   )
+
+  const rgbText = {
+    background:
+      "linear-gradient(90deg, RGB(255, 20, 147), RGB(255, 0, 51), RGB(153, 51, 255), RGB(0, 255, 255), RGB(0, 102, 255))",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+  }
 
   return (
     <div className="flex flex-col w-full">
@@ -74,7 +82,9 @@ export function HomePage() {
             <div
               className={`flex-col items-center justify-center h-screen flex w-full`}
             >
-              <HelloThere />
+              <span style={rgbText} className="text-8xl font-black">
+                Hello There!!
+              </span>
             </div>
           </ParallaxLayer>
           <ParallaxLayer
@@ -109,6 +119,7 @@ export function HomePage() {
             style={{
               ...alignCenter,
               paddingRight: 100,
+              zIndex: 10,
             }}
           >
             <div className="flex mr-24 rounded-full justify-center items-center">
@@ -116,6 +127,33 @@ export function HomePage() {
             </div>
           </ParallaxLayer>
           <CloudParticel />
+          <ParallaxLayer
+            offset={4}
+            className="justify-end"
+            sticky={{ start: 4, end: 5 }}
+            speed={0.5}
+            style={{
+              ...alignCenter,
+              paddingRight: 100,
+            }}
+          >
+            <div className="absolute right-[25%] top-0">
+              <img
+                src={arrowImage}
+                alt="gambarArrow"
+                width={300}
+                height={300}
+                className="-rotate-45"
+              />
+            </div>
+            <span
+              style={rgbText}
+              className="text-4xl flex flex-col absolute right-[27%] top-[25%] font-black"
+            >
+              <span>IT'S ME</span>
+              <span>Click Photo</span>
+            </span>
+          </ParallaxLayer>
         </Parallax>
       </NavigationBar>
     </div>
