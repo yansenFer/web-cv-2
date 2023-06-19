@@ -3,7 +3,7 @@ import { HomePage } from "../pages"
 
 export const router = createBrowserRouter([
   {
-    path: "/web-cv-2",
+    path: "/",
     element: <HomePage />,
   },
 ])
