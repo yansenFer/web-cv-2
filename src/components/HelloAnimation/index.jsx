@@ -11,7 +11,7 @@ export default function HelloThere() {
       height: 0,
       innerHeight: 0,
       transform: "perspective(600px) rotateX(0deg)",
-      color: "#222831",
+      color: "#00ADB5",
     },
     enter: [
       { opacity: 1, height: 80, innerHeight: 80 },
@@ -19,7 +19,7 @@ export default function HelloThere() {
       { transform: "perspective(600px) rotateX(0deg)" },
     ],
     leave: [
-      { color: "#393E46" },
+      { color: "#ff6600" },
       { innerHeight: 0 },
       { opacity: 0, height: 0 },
     ],
