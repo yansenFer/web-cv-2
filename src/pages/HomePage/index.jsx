@@ -3,10 +3,12 @@
 import { AiOutlineArrowDown } from "react-icons/ai"
 import { useEffect, useState } from "react"
 import { Parallax, ParallaxLayer } from "@react-spring/parallax"
+import { useSpring, animated } from "@react-spring/web"
 import { NavigationBar } from "../../components"
 import { ProfileImage, HelloThere, CloudParticel } from "../../components"
 import * as React from "react"
 import arrowImage from "../../assets/arrow.png"
+import yadika from "../../assets/ydk.png"
 
 export function HomePage() {
   const [arrow, setArrow] = useState(false)
@@ -30,6 +32,36 @@ export function HomePage() {
     <div className="flex flex-col w-full">
       <NavigationBar>
         <Parallax pages={10} style={{ paddingTop: 10, zIndex: 20 }}>
+          <ParallaxLayer
+            offset={4.98}
+            speed={0.56}
+            style={{
+              ...alignCenter,
+              justifyContent: "center",
+              backgroundImage: `url(${yadika})`,
+              backgroundSize: "cover",
+              zindex: 10,
+            }}
+          ></ParallaxLayer>
+          <ParallaxLayer
+            offset={5.35}
+            className="justify-end"
+            speed={0.3}
+            style={{
+              justifyContent: "center",
+              backgroundColor: "#222831",
+            }}
+          ></ParallaxLayer>
+          <ParallaxLayer
+            offset={4}
+            speed={0.4}
+            style={{
+              justifyContent: "center",
+              backgroundColor: "#222831",
+              zIndex: 20,
+            }}
+          ></ParallaxLayer>
+          <CloudParticel />
           <ParallaxLayer
             offset={0}
             speed={0.1}
@@ -85,10 +117,11 @@ export function HomePage() {
           </ParallaxLayer>
           <ParallaxLayer
             offset={2.4}
-            sticky={{ start: 2.4, end: 5 }}
-            speed={0.5}
+            sticky={{ start: 2.4, end: 3.2 }}
+            speed={1}
             style={{
               ...alignCenter,
+              zindex: 20,
               justifyContent: "start",
             }}
           >
@@ -110,7 +143,7 @@ export function HomePage() {
           <ParallaxLayer
             offset={2.8}
             className="justify-end"
-            sticky={{ start: 3, end: 5 }}
+            sticky={{ start: 2.8, end: 3.2 }}
             speed={0.5}
             style={{
               ...alignCenter,
@@ -118,44 +151,15 @@ export function HomePage() {
               zIndex: 10,
             }}
           >
-            <div className="flex mr-24 rounded-full justify-center items-center">
+            <div className="flex mr-40 rounded-full justify-center items-center">
               <ProfileImage />
             </div>
           </ParallaxLayer>
-          <CloudParticel />
           <ParallaxLayer
             offset={4}
             className="justify-end"
-            sticky={{ start: 4, end: 5 }}
-            speed={0.5}
-            style={{
-              ...alignCenter,
-              width: "80%",
-              paddingRight: 100,
-            }}
-          >
-            <div className="fixed top-0 xl:mr-20 lg:mr-32 md:mr-32 ">
-              <img
-                src={arrowImage}
-                alt="gambarArrow"
-                width={300}
-                height={300}
-                className="-rotate-45"
-              />
-            </div>
-            <span
-              style={rgbText}
-              className="text-4xl flex flex-col fixed xl:mr-36 lg:mr-48 md:mr-32 top-[25%] font-black"
-            >
-              <span>IT'S ME</span>
-              <span>Click Photo</span>
-            </span>
-          </ParallaxLayer>
-          <ParallaxLayer
-            offset={6}
-            className="justify-end"
-            sticky={{ start: 6, end: 6.4 }}
-            speed={0.1}
+            sticky={{ start: 4, end: 4.5 }}
+            speed={0.7}
             style={{
               ...alignCenter,
               paddingTop: "10%",
@@ -166,23 +170,30 @@ export function HomePage() {
             <div
               className={`flex-col items-start justify-start h-screen flex w-full`}
             >
-              <span style={rgbText} className="text-5xl font-black">
+              <animated.div className="text-[#EEEEEE] text-5xl font-black">
                 Education
-              </span>
+              </animated.div>
             </div>
           </ParallaxLayer>
           <ParallaxLayer
-            offset={6.2}
-            className="justify-end"
-            sticky={{ start: 6.2, end: 6.7 }}
-            speed={0.5}
+            offset={4.6}
+            sticky={{ start: 4.6, end: 7 }}
+            speed={0.1}
             style={{
               ...alignCenter,
               justifyContent: "center",
-              backgroundImage: `url()`,
-              backgroundSize: "cover",
+              paddingTop: "30%",
+              zIndex: 10,
             }}
-          ></ParallaxLayer>
+          >
+            <div
+              className={`flex-col items-center justify-start h-screen flex w-full`}
+            >
+              <animated.div className="text-[#EEEEEE] text-8xl font-black">
+                SMK Yadika 4
+              </animated.div>
+            </div>
+          </ParallaxLayer>
         </Parallax>
       </NavigationBar>
     </div>
