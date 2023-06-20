@@ -9,6 +9,7 @@ import { ProfileImage, HelloThere, CloudParticel } from "../../components"
 import * as React from "react"
 import yadika from "../../assets/ydk.png"
 import toga from "../../assets/toga.png"
+import ubm from "../../assets/ubm.png"
 
 export function HomePage() {
   const [arrow, setArrow] = useState(false)
@@ -32,7 +33,7 @@ export function HomePage() {
     <div className="flex flex-col w-full">
       <NavigationBar>
         <Parallax
-          pages={10}
+          pages={12}
           style={{
             paddingTop: 10,
             zIndex: 20,
@@ -51,6 +52,29 @@ export function HomePage() {
             }}
           ></ParallaxLayer>
           <ParallaxLayer
+            offset={8.4}
+            sticky={{ start: 8.4, end: 10 }}
+            speed={0.4}
+            style={{
+              ...alignCenter,
+              justifyContent: "center",
+            }}
+          >
+            <img src={toga} alt="gambarToga" className="w-[50%]" />
+          </ParallaxLayer>
+          <ParallaxLayer
+            offset={7}
+            speed={0.6}
+            style={{
+              ...alignCenter,
+              justifyContent: "center",
+              backgroundImage: `url(${ubm})`,
+              backgroundSize: "cover",
+              zindex: 10,
+              opacity: 0.6,
+            }}
+          ></ParallaxLayer>
+          <ParallaxLayer
             offset={5.35}
             className="justify-end"
             speed={0.3}
@@ -61,6 +85,24 @@ export function HomePage() {
           ></ParallaxLayer>
           <ParallaxLayer
             offset={4}
+            speed={0.4}
+            style={{
+              justifyContent: "center",
+              backgroundColor: "#222831",
+              zIndex: 20,
+            }}
+          ></ParallaxLayer>
+          <ParallaxLayer
+            offset={6.65}
+            speed={0.4}
+            style={{
+              justifyContent: "center",
+              backgroundColor: "#222831",
+              zIndex: 20,
+            }}
+          ></ParallaxLayer>
+          <ParallaxLayer
+            offset={7.9}
             speed={0.4}
             style={{
               justifyContent: "center",
@@ -124,7 +166,7 @@ export function HomePage() {
           </ParallaxLayer>
           <ParallaxLayer
             offset={2.4}
-            sticky={{ start: 2.4, end: 3.2 }}
+            sticky={{ start: 2.4, end: 3.4 }}
             speed={1}
             style={{
               ...alignCenter,
@@ -151,8 +193,8 @@ export function HomePage() {
           <ParallaxLayer
             offset={2.8}
             className="justify-end"
-            sticky={{ start: 2.8, end: 3.2 }}
-            speed={0.5}
+            sticky={{ start: 2.8, end: 3.4 }}
+            speed={0.3}
             style={{
               ...alignCenter,
               paddingRight: 150,
@@ -164,28 +206,8 @@ export function HomePage() {
             </div>
           </ParallaxLayer>
           <ParallaxLayer
-            offset={4}
-            className="justify-end"
-            sticky={{ start: 4, end: 4.5 }}
-            speed={0.7}
-            style={{
-              ...alignCenter,
-              paddingTop: "10%",
-              padding: 100,
-              zIndex: 10,
-            }}
-          >
-            <div
-              className={`flex-col items-start justify-start h-screen flex w-full`}
-            >
-              <animated.div className="text-[#EEEEEE] text-5xl font-black">
-                Education
-              </animated.div>
-            </div>
-          </ParallaxLayer>
-          <ParallaxLayer
             offset={4.6}
-            sticky={{ start: 4.6, end: 5.7 }}
+            sticky={{ start: 4.6, end: 6 }}
             speed={0.1}
             style={{
               ...alignCenter,
@@ -196,15 +218,15 @@ export function HomePage() {
             <div
               className={`flex-col items-center xl:pb-[20%] lg:pb-[30%] md:pb-[40%] pb-[70%] justify-start flex w-full`}
             >
-              <animated.div className="text-[#EEEEEE] text-8xl font-black">
+              <span className="text-[#EEEEEE] text-8xl font-black">
                 SMK Yadika 4
-              </animated.div>
+              </span>
             </div>
           </ParallaxLayer>
           <ParallaxLayer
             offset={5.3}
             className="px-[100px]"
-            sticky={{ start: 5.3, end: 5.8 }}
+            sticky={{ start: 5.3, end: 6 }}
             speed={0.1}
             style={{
               ...alignCenter,
@@ -239,6 +261,50 @@ export function HomePage() {
               alt="imageToga"
               className="w-72 xl:pt-[25%] lg:pt-[45%] md:pt-[50%] pt-[80%] "
             />
+          </ParallaxLayer>
+
+          <ParallaxLayer
+            offset={6.8}
+            sticky={{ start: 7, end: 10 }}
+            speed={0.8}
+            style={{
+              ...alignCenter,
+              opacity: 1,
+              zIndex: 10,
+            }}
+          >
+            <div
+              className={`flex-col items-center xl:pb-[20%] lg:pb-[30%] md:pb-[40%] pb-[70%] justify-start flex w-full`}
+            >
+              <animated.div className="text-[#EEEEEE] text-8xl font-black">
+                Universitas Bunda Mulia
+              </animated.div>
+            </div>
+          </ParallaxLayer>
+          <ParallaxLayer
+            offset={7.7}
+            className="px-[100px]"
+            sticky={{ start: 7.7, end: 10 }}
+            speed={0.5}
+            style={{
+              ...alignCenter,
+              justifyContent: "center",
+              opacity: 1,
+              zIndex: 10,
+            }}
+          >
+            <div className={`flex-col items-center justify-center flex w-full`}>
+              <span className="text-White font-bold text-xl">
+                I started my college in 2018, studying Informatics at Bunda
+                Mulia University. When I initially enrolled, I chose evening
+                classes because I was working full-time during the day. I opted
+                for the Informatics major because I have a passion for computer
+                science. Although I didn't have much time to delve deeply into
+                it during my studies due to a packed schedule, after graduating
+                in 2022, I began to immerse myself in it and started working on
+                independent developer projects.
+              </span>
+            </div>
           </ParallaxLayer>
         </Parallax>
       </NavigationBar>
