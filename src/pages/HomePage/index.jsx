@@ -7,8 +7,8 @@ import { useSpring, animated } from "@react-spring/web"
 import { NavigationBar } from "../../components"
 import { ProfileImage, HelloThere, CloudParticel } from "../../components"
 import * as React from "react"
-import arrowImage from "../../assets/arrow.png"
 import yadika from "../../assets/ydk.png"
+import toga from "../../assets/toga.png"
 
 export function HomePage() {
   const [arrow, setArrow] = useState(false)
@@ -31,7 +31,13 @@ export function HomePage() {
   return (
     <div className="flex flex-col w-full">
       <NavigationBar>
-        <Parallax pages={10} style={{ paddingTop: 10, zIndex: 20 }}>
+        <Parallax
+          pages={10}
+          style={{
+            paddingTop: 10,
+            zIndex: 20,
+          }}
+        >
           <ParallaxLayer
             offset={4.98}
             speed={0.56}
@@ -41,6 +47,7 @@ export function HomePage() {
               backgroundImage: `url(${yadika})`,
               backgroundSize: "cover",
               zindex: 10,
+              opacity: 0.6,
             }}
           ></ParallaxLayer>
           <ParallaxLayer
@@ -122,10 +129,11 @@ export function HomePage() {
             style={{
               ...alignCenter,
               zindex: 20,
+              padding: 100,
               justifyContent: "start",
             }}
           >
-            <div className="flex ml-32 gap-5 flex-col justify-center w-[50%] items-start">
+            <div className="flex  gap-5 flex-col justify-center w-[50%] items-start">
               <span className="text-White font-bold text-4xl">
                 My name is Yanson.
               </span>
@@ -147,11 +155,11 @@ export function HomePage() {
             speed={0.5}
             style={{
               ...alignCenter,
-              paddingRight: 100,
+              paddingRight: 150,
               zIndex: 10,
             }}
           >
-            <div className="flex mr-40 rounded-full justify-center items-center">
+            <div className="flex  rounded-full justify-center items-center">
               <ProfileImage />
             </div>
           </ParallaxLayer>
@@ -163,7 +171,7 @@ export function HomePage() {
             style={{
               ...alignCenter,
               paddingTop: "10%",
-              paddingLeft: "1%",
+              padding: 100,
               zIndex: 10,
             }}
           >
@@ -177,22 +185,60 @@ export function HomePage() {
           </ParallaxLayer>
           <ParallaxLayer
             offset={4.6}
-            sticky={{ start: 4.6, end: 7 }}
+            sticky={{ start: 4.6, end: 5.7 }}
             speed={0.1}
             style={{
               ...alignCenter,
-              justifyContent: "center",
-              paddingTop: "30%",
+              opacity: 1,
               zIndex: 10,
             }}
           >
             <div
-              className={`flex-col items-center justify-start h-screen flex w-full`}
+              className={`flex-col items-center xl:pb-[20%] lg:pb-[30%] md:pb-[40%] pb-[70%] justify-start flex w-full`}
             >
               <animated.div className="text-[#EEEEEE] text-8xl font-black">
                 SMK Yadika 4
               </animated.div>
             </div>
+          </ParallaxLayer>
+          <ParallaxLayer
+            offset={5.3}
+            className="px-[100px]"
+            sticky={{ start: 5.3, end: 5.8 }}
+            speed={0.1}
+            style={{
+              ...alignCenter,
+              justifyContent: "center",
+              opacity: 1,
+              zIndex: 10,
+            }}
+          >
+            <div className={`flex-col items-center justify-center flex w-full`}>
+              <span className="text-White font-bold text-xl">
+                In senior high school, I chose a vocational high school and
+                specialized in the field of "Computer Technology and
+                Networking." I opted for higher secondary education so that I
+                could work while pursuing my college degree. I chose the
+                "Computer and Networking Engineering" program because I have a
+                passion for all things related to computers. I started attending
+                vocational high school in 2015 and graduated in 2018.
+              </span>
+            </div>
+          </ParallaxLayer>
+          <ParallaxLayer
+            offset={5.5}
+            sticky={{ start: 5.5, end: 6 }}
+            speed={1}
+            style={{
+              ...alignCenter,
+              justifyContent: "center",
+            }}
+          >
+            <img
+              src={toga}
+              alt="imageToga"
+              className="w-72 xl:pt-[25%] lg:pt-[45%] md:pt-[50%] pt-[80%] "
+            />
           </ParallaxLayer>
         </Parallax>
       </NavigationBar>
