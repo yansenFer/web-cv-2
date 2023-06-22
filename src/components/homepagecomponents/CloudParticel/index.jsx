@@ -154,6 +154,104 @@ export function CloudParticel() {
         />
       </ParallaxLayer>
       {/* end cloud section 3 */}
+      {/* cloud section 4*/}
+      <ParallaxLayer offset={9.8} speed={0.8} style={{ opacity: 0.1 }}>
+        <img
+          src={url("cloud")}
+          style={{ display: "block", width: "20%", marginLeft: "55%" }}
+        />
+        <img
+          src={url("cloud")}
+          style={{ display: "block", width: "10%", marginLeft: "15%" }}
+        />
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={9.3} speed={0.5} style={{ opacity: 0.1 }}>
+        <img
+          src={url("cloud")}
+          style={{ display: "block", width: "20%", marginLeft: "70%" }}
+        />
+        <img
+          src={url("cloud")}
+          style={{ display: "block", width: "20%", marginLeft: "40%" }}
+        />
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={9.6} speed={0.2} style={{ opacity: 0.2 }}>
+        <img
+          src={url("cloud")}
+          style={{ display: "block", width: "10%", marginLeft: "10%" }}
+        />
+        <img
+          src={url("cloud")}
+          style={{ display: "block", width: "20%", marginLeft: "75%" }}
+        />
+        <img
+          src={url("cloud")}
+          style={{ display: "block", width: "20%", marginLeft: "30%" }}
+        />
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={10} speed={0.5} style={{ opacity: 0.1 }}>
+        <img
+          src={url("cloud")}
+          style={{ display: "block", width: "20%", marginLeft: "70%" }}
+        />
+        <img
+          src={url("cloud")}
+          style={{ display: "block", width: "20%", marginLeft: "40%" }}
+        />
+      </ParallaxLayer>
+      {/* end cloud section 4 */}
+      {/* cloud section 5*/}
+      <ParallaxLayer offset={10.8} speed={0.8} style={{ opacity: 0.1 }}>
+        <img
+          src={url("cloud")}
+          style={{ display: "block", width: "20%", marginLeft: "55%" }}
+        />
+        <img
+          src={url("cloud")}
+          style={{ display: "block", width: "10%", marginLeft: "15%" }}
+        />
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={10.3} speed={0.5} style={{ opacity: 0.1 }}>
+        <img
+          src={url("cloud")}
+          style={{ display: "block", width: "20%", marginLeft: "70%" }}
+        />
+        <img
+          src={url("cloud")}
+          style={{ display: "block", width: "20%", marginLeft: "40%" }}
+        />
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={10.6} speed={0.2} style={{ opacity: 0.2 }}>
+        <img
+          src={url("cloud")}
+          style={{ display: "block", width: "10%", marginLeft: "10%" }}
+        />
+        <img
+          src={url("cloud")}
+          style={{ display: "block", width: "20%", marginLeft: "75%" }}
+        />
+        <img
+          src={url("cloud")}
+          style={{ display: "block", width: "20%", marginLeft: "30%" }}
+        />
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={11} speed={0.5} style={{ opacity: 0.1 }}>
+        <img
+          src={url("cloud")}
+          style={{ display: "block", width: "20%", marginLeft: "70%" }}
+        />
+        <img
+          src={url("cloud")}
+          style={{ display: "block", width: "20%", marginLeft: "40%" }}
+        />
+      </ParallaxLayer>
+      {/* end cloud section 5 */}
     </>
   )
 }

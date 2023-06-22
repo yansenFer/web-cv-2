@@ -4,7 +4,7 @@ import { AiOutlineArrowDown } from "react-icons/ai"
 import { useEffect, useState } from "react"
 import { Parallax, ParallaxLayer } from "@react-spring/parallax"
 import { useSpring, animated } from "@react-spring/web"
-import { NavigationBar } from "../../components"
+import { CardView, NavigationBar } from "../../components"
 import { ProfileImage, HelloThere, CloudParticel } from "../../components"
 import * as React from "react"
 import yadika from "../../assets/ydk.png"
@@ -53,7 +53,7 @@ export function HomePage() {
           ></ParallaxLayer>
           <ParallaxLayer
             offset={8.4}
-            sticky={{ start: 8.4, end: 10 }}
+            sticky={{ start: 8.4, end: 8.8 }}
             speed={0.4}
             style={{
               ...alignCenter,
@@ -265,7 +265,7 @@ export function HomePage() {
 
           <ParallaxLayer
             offset={6.8}
-            sticky={{ start: 7, end: 10 }}
+            sticky={{ start: 7, end: 8.8 }}
             speed={0.8}
             style={{
               ...alignCenter,
@@ -284,7 +284,7 @@ export function HomePage() {
           <ParallaxLayer
             offset={7.7}
             className="px-[100px]"
-            sticky={{ start: 7.7, end: 10 }}
+            sticky={{ start: 7.7, end: 8.8 }}
             speed={0.5}
             style={{
               ...alignCenter,
@@ -305,6 +305,31 @@ export function HomePage() {
                 independent developer projects.
               </span>
             </div>
+          </ParallaxLayer>
+          <ParallaxLayer
+            offset={10}
+            className="items-start pt-[15%] justify-center"
+            sticky={{ start: 10, end: 11 }}
+            speed={0.8}
+            style={{
+              justifyContent: "center",
+            }}
+          >
+            <span
+              className="text-[#EEEEEE] text-5xl font-black"
+              style={rgbText}
+            >
+              Here If you want to see more details
+            </span>
+          </ParallaxLayer>
+          <ParallaxLayer
+            offset={10.5}
+            className="items-start xl:pt-[20%] lg:pt-[25%] md:pt-[30%] sm:pt-[35%] justify-center"
+            sticky={{ start: 10.5, end: 11 }}
+            speed={0.8}
+            style={{}}
+          >
+            <CardView />
           </ParallaxLayer>
         </Parallax>
       </NavigationBar>
