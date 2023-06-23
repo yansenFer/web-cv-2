@@ -172,7 +172,7 @@ export function HomePage() {
         </ParallaxLayer>
         <ParallaxLayer
           offset={2.4}
-          className="xl:px-36 lg:px-36 md:px-10 sm:px-5 px-5"
+          className="xl:px-36 lg:px-36 md:px-10 sm:px-5 px-3"
           sticky={{ start: 2.4, end: 3.4 }}
           speed={1}
           style={{
@@ -289,7 +289,7 @@ export function HomePage() {
         </ParallaxLayer>
         <ParallaxLayer
           offset={7.7}
-          className="xl:px-36 lg:px-36 md:px-10 sm:px-5 px-0"
+          className="xl:px-36 lg:px-36 md:px-10 sm:px-5 px-3"
           sticky={{ start: 7.7, end: 8.8 }}
           speed={0.5}
           style={{
