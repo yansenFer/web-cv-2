@@ -27,7 +27,7 @@ function CardView() {
           imagen={github}
           title={"Github"}
           subtitle={"Here if you want to see my github"}
-          link={"/https://github.com/yansenFer"}
+          link={"https://github.com/yansenFer"}
           buttonText="Go to Github"
         />
       ),

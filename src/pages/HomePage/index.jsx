@@ -4,12 +4,13 @@ import { AiOutlineArrowDown } from "react-icons/ai"
 import { useEffect, useState } from "react"
 import { Parallax, ParallaxLayer } from "@react-spring/parallax"
 import { useSpring, animated } from "@react-spring/web"
-import { CardView, NavigationBar } from "../../components"
+import { CardView } from "../../components"
 import { ProfileImage, HelloThere, CloudParticel } from "../../components"
 import * as React from "react"
 import yadika from "../../assets/ydk.png"
 import toga from "../../assets/toga.png"
 import ubm from "../../assets/ubm.png"
+import { NavigationBarHome } from "../../components"
 
 export function HomePage() {
   const [arrow, setArrow] = useState(false)
@@ -31,7 +32,7 @@ export function HomePage() {
 
   return (
     <div className="flex flex-col w-full">
-      <NavigationBar />
+      <NavigationBarHome />
       <Parallax
         pages={12}
         style={{
