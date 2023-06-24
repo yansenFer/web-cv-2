@@ -8,7 +8,7 @@ export function Experience() {
       <span className="text-5xl mx-10 font-bold text-[#27374D] items-start mt-10">
         Experience
       </span>
-      <div className="card mx-10 mt-10 w-[60%] card-side bg-[#00ADB5] shadow-xl">
+      <div className="card xl:mx-10 lg:mx-10 md:mx-10 sm:mx-0 mx-0 xl:px-10 lg:px-10 md:px-10 sm:px-5 px-1 mt-10 xl:w-[60%] lg:w-[60%] md:w-[60%] sm:w-[100%] w-[100%] card-side bg-[#00ADB5] shadow-xl flex xl:flex-row lg:flex-col md:flex-col sm:flex-col flex-col">
         <figure>
           <img src={ksi} className="w-52" alt="Movie" />
         </figure>
@@ -53,9 +53,9 @@ export function Experience() {
           </ul>
         </div>
       </div>
-      <div className="card mx-10 mt-10 w-[60%] card-side bg-[#00ADB5] shadow-xl">
+      <div className="card xl:mx-10 lg:mx-10 md:mx-10 sm:mx-0 mx-0 xl:px-10 lg:px-10 md:px-10 sm:px-5 px-1 mt-10 xl:w-[60%] lg:w-[60%] md:w-[60%] sm:w-[100%] w-[100%] card-side bg-[#00ADB5] shadow-xl flex xl:flex-row lg:flex-col md:flex-col sm:flex-col flex-col">
         <figure>
-          <img src={mayora} className="w-52 pl-5  " alt="mayora" />
+          <img src={mayora} className="w-52  " alt="mayora" />
         </figure>
         <div className="card-body text-left">
           <h2 className="card-title">PT Mayora Indah Tbk</h2>
@@ -93,9 +93,9 @@ export function Experience() {
           </ul>
         </div>
       </div>
-      <div className="card mx-10 mt-10 w-[60%] card-side bg-[#00ADB5] shadow-xl">
+      <div className="card mb-20 xl:mx-10 lg:mx-10 md:mx-10 sm:mx-0 mx-0 xl:px-10 lg:px-10 md:px-10 sm:px-5 px-1 mt-10 xl:w-[60%] lg:w-[60%] md:w-[60%] sm:w-[100%] w-[100%] card-side bg-[#00ADB5] shadow-xl flex xl:flex-row lg:flex-col md:flex-col sm:flex-col flex-col">
         <figure>
-          <img src={sbb} className="w-52 pl-5  " alt="mayora" />
+          <img src={sbb} className="w-52" alt="mayora" />
         </figure>
         <div className="card-body text-left">
           <h2 className="card-title">PT. Solusindo Berkat Bersama</h2>
