@@ -3,16 +3,17 @@
 import React, { useState, useEffect } from "react"
 import { AiOutlineHome, AiOutlineUser, AiOutlineContacts } from "react-icons/ai"
 import { BsPersonWorkspace } from "react-icons/bs"
+import { useNavigate } from "react-router-dom"
 
 export const NavigationBar = ({ children }) => {
-  const [isScrollingDown, setIsScrollingDown] = useState(false)
   const [isMobileView, setIsMobileView] = useState(false)
+  const router = useNavigate()
 
   useEffect(() => {
     const handleResize = () => {
       const screenWidth = window.innerWidth
 
-      if (screenWidth <= 655) {
+      if (screenWidth <= 645) {
         setIsMobileView(true)
       } else {
         setIsMobileView(false)
@@ -36,16 +37,12 @@ export const NavigationBar = ({ children }) => {
       {isMobileView ? (
         <>
           <div
-            className={`grid bottom-0 z-30 justify-center items-center w-full h-16 duration-500bg-[#222831] absolute shadow-md`}
+            className={`grid bottom-0 z-30 justify-center items-center w-full h-16 duration-500 bg-[#222831] absolute shadow-md`}
           >
             {/* start menu */}
-            <div
-              className={`grid grid-cols-4 gap-16 min-w-fit items-center ${
-                isScrollingDown ? "text-[#606C5D]" : "text[#FFF4F4]"
-              }`}
-            >
-              <AiOutlineHome size={25} />
-              <AiOutlineUser size={25} />
+            <div className={`grid grid-cols-4 gap-16 min-w-fit items-center`}>
+              <AiOutlineHome onClick={() => router("/")} size={25} />
+              <AiOutlineUser size={25} onClick={() => router("/ProfilePage")} />
               <BsPersonWorkspace size={25} />
               <AiOutlineContacts size={25} />
             </div>
@@ -56,28 +53,39 @@ export const NavigationBar = ({ children }) => {
       ) : (
         <>
           <div
-            className={`flex top-0 z-30 justify-between items-center w-screen h-16 duration-500 ${
-              isScrollingDown
-                ? "bg-[#FFF4F4] shadow-md shadow-gray-800 fixed rounded-br-full transition-all"
-                : "bg-[#222831] sticky rounded-br-none transition-all shadow-md"
-            }`}
+            className={`flex top-0 z-30 justify-between items-center w-screen h-16 bg-[#DDE6ED] shadow-md shadow-gray-800 fixed`}
           >
             {/* start logo */}
-            <div className="font-bold text-2xl bg-[#222831] h-full flex items-center w-56 px-10 rounded-br-full">
+            <button
+              className="font-bold text-2xl bg-[#222831] h-full flex items-center w-56 px-10 rounded-br-full"
+              onClick={() => router("/")}
+            >
               YansonFer
-            </div>
+            </button>
             {/* end logo */}
             {/* start menu */}
 
             <div
-              className={`flex lex-row gap-10 pr-20 items-center ${
-                isScrollingDown ? "text-[#606C5D]" : "text[#FFF4F4]"
-              }`}
+              className={`flex flex-row pr-5 font-bold items-center text-[#222831]`}
             >
-              <button className="font-medium">Home</button>
-              <button className="font-medium">Profile</button>
-              <button className="font-medium">Projects</button>
-              <button className="font-medium">Contact</button>
+              <button
+                className="font-medium hover:shadow-inner hover:border-b-4 duration-75 transition-all hover:border-[#222831] w-full h-full py-5 px-5 hover:shadow-gray-950"
+                onClick={() => router("/")}
+              >
+                Home
+              </button>
+              <button
+                className="font-medium hover:shadow-inner hover:border-b-4 duration-75 transition-all hover:border-[#222831] w-full h-full py-5 px-5 hover:shadow-gray-950"
+                onClick={() => router("/ProfilePage")}
+              >
+                Profile
+              </button>
+              <button className="font-medium hover:shadow-inner hover:border-b-4 duration-75 transition-all hover:border-[#222831] w-full h-full py-5 px-5 hover:shadow-gray-950">
+                Projects
+              </button>
+              <button className="font-medium hover:shadow-inner hover:border-b-4 duration-75 transition-all hover:border-[#222831] w-full h-full py-5 px-5 hover:shadow-gray-950">
+                Contact
+              </button>
             </div>
             {/* end menu */}
           </div>
