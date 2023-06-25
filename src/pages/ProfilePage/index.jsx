@@ -1,5 +1,11 @@
 import { NavigationBar } from "../../components"
-import { AboutMe, Education, Experience } from "./components"
+import {
+  AboutMe,
+  Education,
+  Experience,
+  Skill,
+  TeamworkSkill,
+} from "./components"
 
 export function ProfilePage() {
   return (
@@ -9,6 +15,8 @@ export function ProfilePage() {
         <AboutMe />
         <Education />
         <Experience />
+        <Skill />
+        <TeamworkSkill />
         {/* <Experience /> */}
       </div>
     </div>
