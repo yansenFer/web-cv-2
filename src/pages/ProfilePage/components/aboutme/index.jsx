@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import backgroundImage from "../../../../assets/backgroundimage.png"
 import {
   AiOutlineInstagram,
@@ -10,9 +11,24 @@ export function AboutMe() {
     window.open(`${value}`)
   }
 
+  const onButtonClick = () => {
+    // using Java Script method to get PDF file
+    fetch("./cvyanson.pdf").then((response) => {
+      response.blob().then((blob) => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob)
+        // Setting various property values
+        let alink = document.createElement("a")
+        alink.href = fileURL
+        alink.download = "cvyanson.pdf"
+        alink.click()
+      })
+    })
+  }
+
   return (
     <div
-      className="hero min-h-screen"
+      className="hero min-h-screen animate__animated animate__fadeInDown "
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="hero-overlay bg-opacity-60"></div>
@@ -53,6 +69,9 @@ export function AboutMe() {
               </button>
             </div>
           </div>
+          <button className="btn btn-outline mt-10" onClick={onButtonClick}>
+            Download CV
+          </button>
         </div>
       </div>
     </div>
