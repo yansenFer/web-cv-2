@@ -1,14 +1,28 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 import ksi from "../../../../assets/ksi.png"
 import mayora from "../../../../assets/mayora.png"
 import sbb from "../../../../assets/sbb.png"
 
-export function Experience() {
+export function Experience({ isAnimated }) {
   return (
     <>
-      <span className="text-5xl xl:mx-10 lg:mx-10 md:mx-10 sm:mx-0 mx-0 font-bold text-[#27374D] items-start mt-10">
+      <span
+        className={`text-5xl xl:mx-10 lg:mx-10 md:mx-10 sm:mx-0 mx-0 font-bold text-[#27374D] items-start mt-10 ${
+          isAnimated
+            ? "animate__animated animate__bounceInLeft animate__slow"
+            : "invisible"
+        }`}
+      >
         Experience
       </span>
-      <div className="card xl:mx-10 lg:mx-10 md:mx-10 sm:mx-0 mx-0 xl:px-10 lg:px-10 md:px-10 sm:px-5 px-1 mt-10 xl:w-[60%] lg:w-[60%] md:w-[60%] sm:w-[100%] w-[100%] card-side bg-[#00ADB5] shadow-xl flex xl:flex-row lg:flex-col md:flex-col sm:flex-col flex-col">
+      <div
+        className={`card xl:mx-10 lg:mx-10 md:mx-10 sm:mx-0 mx-0 xl:px-10 lg:px-10 md:px-10 sm:px-5 px-1 mt-10 xl:w-[60%] lg:w-[60%] md:w-[60%] sm:w-[100%] w-[100%] card-side bg-[#00ADB5] shadow-xl flex xl:flex-row lg:flex-col md:flex-col sm:flex-col flex-col ${
+          isAnimated
+            ? "animate__animated animate__fadeInUp animate__fast animate__delay-2s"
+            : "invisible"
+        }`}
+      >
         <figure>
           <img src={ksi} className="w-52 mt-5" alt="Movie" />
         </figure>
@@ -53,7 +67,14 @@ export function Experience() {
           </ul>
         </div>
       </div>
-      <div className="card xl:mx-10 lg:mx-10 md:mx-10 sm:mx-0 mx-0 xl:px-10 lg:px-10 md:px-10 sm:px-5 px-1 mt-10 xl:w-[60%] lg:w-[60%] md:w-[60%] sm:w-[100%] w-[100%] card-side bg-[#00ADB5] shadow-xl flex xl:flex-row lg:flex-col md:flex-col sm:flex-col flex-col">
+      <div
+        className={`card xl:mx-10 lg:mx-10 md:mx-10 sm:mx-0 mx-0 xl:px-10 lg:px-10 md:px-10 sm:px-5 px-1 mt-10 xl:w-[60%] lg:w-[60%] md:w-[60%] sm:w-[100%] w-[100%] card-side bg-[#00ADB5] shadow-xl flex xl:flex-row lg:flex-col md:flex-col sm:flex-col flex-col ${
+          isAnimated
+            ? "animate__animated animate__fadeInUp animate__fast animate__delay-2s"
+            : "invisible"
+        }`}
+      >
+        {" "}
         <figure>
           <img src={mayora} className="w-52 mt-10 " alt="mayora" />
         </figure>
@@ -93,7 +114,14 @@ export function Experience() {
           </ul>
         </div>
       </div>
-      <div className="card xl:mx-10 lg:mx-10 md:mx-10 sm:mx-0 mx-0 xl:px-10 lg:px-10 md:px-10 sm:px-5 px-1 mt-10 xl:w-[60%] lg:w-[60%] md:w-[60%] sm:w-[100%] w-[100%] card-side bg-[#00ADB5] shadow-xl flex xl:flex-row lg:flex-col md:flex-col sm:flex-col flex-col">
+      <div
+        className={`card xl:mx-10 lg:mx-10 md:mx-10 sm:mx-0 mx-0 xl:px-10 lg:px-10 md:px-10 sm:px-5 px-1 mt-10 xl:w-[60%] lg:w-[60%] md:w-[60%] sm:w-[100%] w-[100%] card-side bg-[#00ADB5] shadow-xl flex xl:flex-row lg:flex-col md:flex-col sm:flex-col flex-col ${
+          isAnimated
+            ? "animate__animated animate__fadeInUp animate__fast animate__delay-2s"
+            : "invisible"
+        }`}
+      >
+        {" "}
         <figure>
           <img src={sbb} className="w-52 mt-10" alt="mayora" />
         </figure>
