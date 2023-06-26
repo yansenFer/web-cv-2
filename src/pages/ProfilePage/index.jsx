@@ -33,8 +33,6 @@ export function ProfilePage() {
     }
   })
 
-  console.log("aaaaaaaaaa", isTeamWork)
-
   return (
     <div className="bg-[#DDE6ED] absolute top-0 right-0 left-0 flex w-full">
       <NavigationBar />
