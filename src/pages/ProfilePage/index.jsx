@@ -18,11 +18,11 @@ export function ProfilePage() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY || window.pageYOffset
-      if (scrollPosition >= 250 && scrollPosition < 700)
+      if (scrollPosition >= 250 && scrollPosition < 499)
         return SetIsEducation(true)
-      if (scrollPosition > 500 && scrollPosition < 1300)
+      if (scrollPosition > 500 && scrollPosition < 1399)
         return SetIsExperience(true)
-      if (scrollPosition > 1400 && scrollPosition <= 1600)
+      if (scrollPosition > 1400 && scrollPosition <= 1899)
         return setIsCodeSkill(true)
       if (scrollPosition > 1800) return setIsTeamWork(true)
     }
