@@ -13,7 +13,7 @@ export function Skill({ isAnimated }) {
         Code Skill
       </span>
       <ul
-        className={`text-[#27374D] mt-10 xl:mx-10 lg:mx-10 md:mx-10 sm:mx-0 mx-0 font-bold ${
+        className={`text-[#27374D] mt-10 xl:mx-10 lg:mx-10 md:mx-10 sm:mx-5 mx-5 font-bold ${
           isAnimated
             ? "animate__animated animate__fadeInUp animate__fast animate__delay-2s"
             : "invisible"

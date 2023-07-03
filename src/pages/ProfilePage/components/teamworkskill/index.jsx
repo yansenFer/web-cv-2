@@ -13,7 +13,7 @@ export function TeamworkSkill({ isAnimated }) {
         Team Work Skill
       </span>
       <dev
-        className={`grid gap-2 mb-20  xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 mt-10 xl:mx-10 lg:mx-10 md:mx-10 sm:mx-0 ${
+        className={`grid gap-2 mb-20  xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 mt-10 xl:mx-10 lg:mx-10 md:mx-10 sm:mx-5 mx-5 ${
           isAnimated
             ? "animate__animated animate__fadeInUp animate__fast animate__delay-2s"
             : "invisible"

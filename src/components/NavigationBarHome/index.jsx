@@ -36,21 +36,20 @@ export const NavigationBarHome = ({ children }) => {
     <div className="flex flex-col">
       {isMobileView ? (
         <>
-          <div
-            className={`grid bottom-0 z-30 justify-center items-center w-full h-16 duration-500 bg-[#222831] absolute shadow-md`}
-          >
-            {/* start menu */}
-            <div
-              className={`grid grid-cols-4 gap-16 min-w-fit items-center text[#FFF4F4]`}
-            >
+          <div className="btm-nav z-50">
+            <button>
               <AiOutlineHome onClick={() => router("/")} size={25} />
+            </button>
+            <button>
               <AiOutlineUser size={25} onClick={() => router("/ProfilePage")} />
+            </button>
+            <button>
               <BsPersonWorkspace size={25} />
+            </button>
+            <button>
               <AiOutlineContacts size={25} />
-            </div>
-            {/* end menu */}
+            </button>
           </div>
-          {children}
         </>
       ) : (
         <>
