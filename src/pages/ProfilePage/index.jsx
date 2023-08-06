@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import { NavigationBar } from "../../components"
-import { AboutMe } from "./components"
+import { AboutMe, Skill } from "./components"
 import { useEffect, useState } from "react"
 import { Education } from "./components"
 import { Experience } from "./components"
@@ -35,10 +35,11 @@ export function ProfilePage() {
   return (
     <div className="bg-[#DDE6ED] absolute top-0 right-0 left-0 flex w-full">
       <NavigationBar />
-      <div className="flex flex-col items-start w-screen h-full">
+      <div className="flex flex-col items-start min-w-screen h-full">
         <AboutMe />
         <Education />
         <Experience />
+        <Skill />
       </div>
     </div>
   )

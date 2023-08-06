@@ -14,13 +14,18 @@ import sbb1 from "../../../../assets/sbb1.jpg"
 import sbb2 from "../../../../assets/sbb2.jpg"
 import sbb3 from "../../../../assets/sbb3.jpg"
 
+import { BsFillBuildingsFill } from "react-icons/bs"
+
 export function Experience() {
   return (
     <div className="hero min-h-screen">
       <div className="flex flex-col w-full xl:px-20 lg:px-20 md:px-10 sm:px-5 px-1">
-        <text className="text-black text-5xl mt-10 font-bold">
-          Work Experiences
-        </text>
+        <div className="flex flex-row items-cente justify-center gap-4">
+          <BsFillBuildingsFill color="black" size={35} />
+          <text className="text-5xl font-bold text-black">
+            Work Experiences
+          </text>
+        </div>
 
         {/* ksi */}
         <div className="flex mt-10 text-left gap-10 xl:justify-between lg:justify-between md:justify-center sm:justify-center justify-center xl:flex-row lg:flex-row md:flex-col: sm:flex-col: flex-col">
