@@ -1,35 +1,33 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
-export function TeamworkSkill({ isAnimated }) {
+export function TeamworkSkill() {
   return (
-    <>
-      <span
-        className={`text-5xl xl:mx-10 lg:mx-10 md:mx-10 sm:mx-0 mx-0 font-bold text-[#27374D] items-start mt-10 ${
-          isAnimated
-            ? "animate__animated animate__bounceInLeft animate__slow"
-            : "invisible"
-        }`}
-      >
-        Team Work Skill
-      </span>
-      <dev
-        className={`grid gap-2 mb-20  xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 mt-10 xl:mx-10 lg:mx-10 md:mx-10 sm:mx-5 mx-5 ${
-          isAnimated
-            ? "animate__animated animate__fadeInUp animate__fast animate__delay-2s"
-            : "invisible"
-        }`}
-      >
-        <div className="bg-[#00ADB5] rounded-lg p-2 font-bold">
-          Communication
+    <div className="hero min-h-screen bg-[#222831]">
+      <div className="flex flex-col gap-10">
+        <div className="flex flex-row items-cente justify-center gap-4">
+          <text className="text-5xl font-bold text-neutral-content">
+            Team Work Skill
+          </text>
         </div>
-        <div className="bg-[#00ADB5] rounded-lg p-2 font-bold">Team Work</div>
-        <div className="bg-[#00ADB5] rounded-lg p-2 font-bold">
-          Time Management
+        <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 xl:gap-10 lg:gap-10 md:gap-10 sm:gap-5 gap-2 justify-center items-center mt-10">
+          <div className="bg-[#DDE6ED] border-4 border-[#ff1493] rounded-lg py-2 px-5 text-black font-semibold">
+            Communication
+          </div>
+          <div className="bg-[#DDE6ED] border-4 border-[#ff0033] rounded-lg py-2 px-5 text-black font-semibold">
+            Collaboration
+          </div>
+          <div className="bg-[#DDE6ED] border-4 border-[#9933ff] rounded-lg py-2 px-5 text-black font-semibold">
+            Flexibility
+          </div>
+          <div className="bg-[#DDE6ED] border-4 border-[#00ffff] rounded-lg py-2 px-5 text-black font-semibold">
+            Receiving Feedback
+          </div>
+          <div className="bg-[#DDE6ED] border-4 border-[#0066ff] rounded-lg py-2 px-5 text-black font-semibold">
+            Time Management
+          </div>
+          <div className="bg-[#DDE6ED] border-4 border-[#87CEEB] rounded-lg py-2 px-5 text-black font-semibold">
+            Building Trust
+          </div>
         </div>
-        <div className="bg-[#00ADB5] rounded-lg p-2 font-bold">
-          Problem Solving
-        </div>
-      </dev>
-    </>
+      </div>
+    </div>
   )
 }
