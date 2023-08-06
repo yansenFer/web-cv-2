@@ -40,13 +40,13 @@ export const NavigationBar = ({ children }) => {
       {isMobileView ? (
         <>
           <div className="btm-nav z-50">
-            <button>
-              <AiOutlineHome onClick={() => router("/")} size={25} />
+            <button onClick={() => router("/")}>
+              <AiOutlineHome size={25} />
             </button>
-            <button>
-              <AiOutlineUser size={25} onClick={() => router("/ProfilePage")} />
+            <button onClick={() => router("/ProfilePage")}>
+              <AiOutlineUser size={25} />
             </button>
-            <button>
+            <button onClick={() => router("/ProjectPage")}>
               <BsPersonWorkspace size={25} />
             </button>
             <button>
@@ -84,7 +84,10 @@ export const NavigationBar = ({ children }) => {
               >
                 Profile
               </button>
-              <button className="font-medium hover:shadow-inner hover:border-b-4 duration-75 transition-all hover:border-[#222831] w-full h-full py-5 px-5 hover:shadow-gray-950">
+              <button
+                onClick={() => router("/ProjectPage")}
+                className="font-medium hover:shadow-inner hover:border-b-4 duration-75 transition-all hover:border-[#222831] w-full h-full py-5 px-5 hover:shadow-gray-950"
+              >
                 Projects
               </button>
               <button className="font-medium hover:shadow-inner hover:border-b-4 duration-75 transition-all hover:border-[#222831] w-full h-full py-5 px-5 hover:shadow-gray-950">

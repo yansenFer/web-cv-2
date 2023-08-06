@@ -40,7 +40,7 @@ export function HomePage() {
           zIndex: 20,
         }}
       >
-        <ParallaxLayer
+        {/* <ParallaxLayer
           offset={4.98}
           speed={0.56}
           style={{
@@ -51,7 +51,7 @@ export function HomePage() {
             zindex: 10,
             opacity: 0.6,
           }}
-        ></ParallaxLayer>
+        ></ParallaxLayer> */}
         <ParallaxLayer
           offset={8.4}
           sticky={{ start: 8.4, end: 8.8 }}
@@ -67,7 +67,7 @@ export function HomePage() {
             className="xl:w-[50%] lg:w-[50%] md:w-[80%] mt-20 xl:visible lg:visible md:visible sm:invisible invisible"
           />
         </ParallaxLayer>
-        <ParallaxLayer
+        {/* <ParallaxLayer
           offset={7}
           speed={0.6}
           style={{
@@ -78,7 +78,7 @@ export function HomePage() {
             zindex: 10,
             opacity: 0.6,
           }}
-        ></ParallaxLayer>
+        ></ParallaxLayer> */}
         <ParallaxLayer
           offset={5.35}
           className="justify-end"
@@ -198,9 +198,9 @@ export function HomePage() {
           </div>
         </ParallaxLayer>
         <ParallaxLayer
-          offset={2.8}
+          offset={2.4}
           className="justify-end xl:visible lg:visible md:invisible sm:invisible invisible"
-          sticky={{ start: 2.8, end: 3.4 }}
+          sticky={{ start: 2.4, end: 3.4 }}
           speed={0.3}
           style={{
             ...alignCenter,

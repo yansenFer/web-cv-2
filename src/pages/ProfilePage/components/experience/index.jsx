@@ -1,164 +1,267 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import ksi from "../../../../assets/ksi.png"
-import mayora from "../../../../assets/mayora.png"
-import sbb from "../../../../assets/sbb.png"
 
-export function Experience({ isAnimated }) {
+import kloverkres1 from "../../../../assets/kloverkres2.jpg"
+import kloverkres2 from "../../../../assets/kloverkres1.jpeg"
+import kloverkres3 from "../../../../assets/kloverkres3.jpg"
+
+import mayora1 from "../../../../assets/mayora1.jpg"
+import mayora2 from "../../../../assets/mayora2.jpg"
+import mayora3 from "../../../../assets/mayora3.jpg"
+import mayora4 from "../../../../assets/mayora4.jpg"
+
+import sbb1 from "../../../../assets/sbb1.jpg"
+import sbb2 from "../../../../assets/sbb2.jpg"
+import sbb3 from "../../../../assets/sbb3.jpg"
+
+export function Experience() {
   return (
-    <>
-      <span
-        className={`text-5xl xl:mx-10 lg:mx-10 md:mx-10 sm:mx-0 mx-0 font-bold text-[#27374D] items-start mt-10 ${
-          isAnimated
-            ? "animate__animated animate__bounceInLeft animate__slow"
-            : "invisible"
-        }`}
-      >
-        Experience
-      </span>
-      <div
-        className={`card xl:mx-10 lg:mx-10 md:mx-10 sm:mx-0 mx-0 xl:px-10 lg:px-10 md:px-10 sm:px-5 px-1 mt-10 xl:w-[60%] lg:w-[60%] md:w-[60%] sm:w-[100%] w-[100%] card-side bg-[#00ADB5] shadow-xl flex xl:flex-row lg:flex-col md:flex-col sm:flex-col flex-col ${
-          isAnimated
-            ? "animate__animated animate__fadeInUp animate__fast animate__delay-2s"
-            : "invisible"
-        }`}
-      >
-        <figure>
-          <img src={ksi} className="w-52 mt-5" alt="Movie" />
-        </figure>
-        <div className="card-body text-left">
-          <h2 className="card-title">PT Kloverkres Solusi Integrasi</h2>
-          <div className="badge bg-[#27374D] p-2 text-white">
-            FrontEnd Developer
-          </div>
-          <p>November 2022 - Present</p>
-          <ul>
-            <li className="flex flex-row gap-3 items-center justify-center">
-              <div className="bg-[#27374D] rounded-full xl:w-3 xl:h-3 lg:w-3 lg:h-3 md:w-1 md:h-1 sm:w-1 sm:h-1 w-1 h-1" />
-              <p>
-                Implement Design From Figma to Mobile Application and Website
-              </p>
-            </li>
-            <li className="flex flex-row gap-3 items-center justify-center">
-              <div className="bg-[#27374D] rounded-full xl:w-3 xl:h-3 lg:w-3 lg:h-3 md:w-1 md:h-1 sm:w-1 sm:h-1 w-1 h-1" />
-              <p>
-                Creating a Website Dashboard Page based on JSON Data from
+    <div className="hero min-h-screen">
+      <div className="flex flex-col w-full xl:px-20 lg:px-20 md:px-10 sm:px-5 px-1">
+        <text className="text-black text-5xl mt-10 font-bold">
+          Work Experiences
+        </text>
+
+        {/* ksi */}
+        <div className="flex mt-10 text-left gap-10 xl:justify-between lg:justify-between md:justify-center sm:justify-center justify-center xl:flex-row lg:flex-row md:flex-col: sm:flex-col: flex-col">
+          <div className="flex xl:max-w-[60%] lg:max-w-[60%] md:max-w-none sm:max-w-none max-w-none flex-col gap-5">
+            <div className="flex flex-col">
+              <text className="text-black font-bold text-3xl">
+                PT. Kloverkres Solusi Integrasi
+              </text>
+              <text className="text-black">
+                November 2022 - Still working here
+              </text>
+            </div>
+            <text className="text-black font-semibold text-justify">
+              This is the first place where I work in the IT world. I have been
+              working here since November 2020 until now. I hold the position of
+              a Frontend developer at this office, and some common tasks that I
+              do here are:
+            </text>
+            <div className="flex text-black font-semibold flex-col gap-2">
+              <text>● Implement Design to Mobile Application</text>
+              <text>
+                ● Creating a Website Dashboard Page based on JSON Data from
                 Backend
-              </p>
-            </li>
-            <li className="flex flex-row gap-3 items-center justify-center">
-              <div className="bg-[#27374D] rounded-full xl:w-3 xl:h-3 lg:w-3 lg:h-3 md:w-1 md:h-1 sm:w-1 sm:h-1 w-1 h-1" />
-              <p>RestAPI Integration</p>
-            </li>
-            <li className="flex flex-row gap-3 items-center justify-center">
-              <div className="bg-[#27374D] rounded-full xl:w-3 xl:h-3 lg:w-3 lg:h-3 md:w-1 md:h-1 sm:w-1 sm:h-1 w-1 h-1" />
-              <p>
-                Using Responsive Design in Creating User Interfaces for Websites
-                or Applications
-              </p>
-            </li>
-            <li className="flex flex-row gap-3 items-center justify-center">
-              <div className="bg-[#27374D] rounded-full xl:w-3 xl:h-3 lg:w-3 lg:h-3 md:w-1 md:h-1 sm:w-1 sm:h-1 w-1 h-1" />
-              <p>
-                Ensuring the Designed Program Interface is Aligned with the
-                Provided JSON Data Requirements
-              </p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div
-        className={`card xl:mx-10 lg:mx-10 md:mx-10 sm:mx-0 mx-0 xl:px-10 lg:px-10 md:px-10 sm:px-5 px-1 mt-10 xl:w-[60%] lg:w-[60%] md:w-[60%] sm:w-[100%] w-[100%] card-side bg-[#00ADB5] shadow-xl flex xl:flex-row lg:flex-col md:flex-col sm:flex-col flex-col ${
-          isAnimated
-            ? "animate__animated animate__fadeInUp animate__fast animate__delay-2s"
-            : "invisible"
-        }`}
-      >
-        {" "}
-        <figure>
-          <img src={mayora} className="w-52 mt-10 " alt="mayora" />
-        </figure>
-        <div className="card-body text-left">
-          <h2 className="card-title">PT Mayora Indah Tbk</h2>
-          <div className="badge bg-[#27374D] p-2 text-white">GL Accounting</div>
-          <p>November 2019 - November 2022</p>
-          <ul>
-            <li className="flex flex-row gap-3 items-center justify-center">
-              <div className="bg-[#27374D] rounded-full xl:w-3 xl:h-3 lg:w-3 lg:h-3 md:w-3 md:h-3 sm:w-1 sm:h-1 w-1 h-1" />
-              <p>Create Financial Report</p>
-            </li>
-            <li className="flex flex-row gap-3 items-center justify-center">
-              <div className="bg-[#27374D] rounded-full xl:w-3 xl:h-3 lg:w-3 lg:h-3 md:w-3 md:h-3 sm:w-1 sm:h-1 w-1 h-1" />
-              <p>Checking payment voucher documents</p>
-            </li>
-            <li className="flex flex-row gap-3 items-center justify-center">
-              <div className="bg-[#27374D] rounded-full xl:w-3 xl:h-3 lg:w-3 lg:h-3 md:w-3 md:h-3 sm:w-1 sm:h-1 w-1 h-1" />
-              <p>Recon all account</p>
-            </li>
-            <li className="flex flex-row gap-3 items-center justify-center">
-              <div className="bg-[#27374D] rounded-full xl:w-3 xl:h-3 lg:w-3 lg:h-3 md:w-3 md:h-3 sm:w-1 sm:h-1 w-1 h-1" />
-              <p>process voucher payment Salary, BPJS, and Jamsostek</p>
-            </li>
-            <li className="flex flex-row gap-3 items-center justify-center">
-              <div className="bg-[#27374D] rounded-full xl:w-3 xl:h-3 lg:w-3 lg:h-3 md:w-3 md:h-3 sm:w-1 sm:h-1 w-1 h-1" />
-              <p>Make a letter of approval for SPT reporting</p>
-            </li>
-            <li className="flex flex-row gap-3 items-center justify-center">
-              <div className="bg-[#27374D] rounded-full xl:w-3 xl:h-3 lg:w-3 lg:h-3 md:w-3 md:h-3 sm:w-1 sm:h-1 w-1 h-1" />
-              <p>Recon pph 21, 23, 4(2)</p>
-            </li>
-            <li className="flex flex-row gap-3 items-center justify-center">
-              <div className="bg-[#27374D] rounded-full xl:w-3 xl:h-3 lg:w-3 lg:h-3 md:w-3 md:h-3 sm:w-1 sm:h-1 w-1 h-1" />
-              <p>Posting Journal</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div
-        className={`card xl:mx-10 lg:mx-10 md:mx-10 sm:mx-0 mx-0 xl:px-10 lg:px-10 md:px-10 sm:px-5 px-1 mt-10 xl:w-[60%] lg:w-[60%] md:w-[60%] sm:w-[100%] w-[100%] card-side bg-[#00ADB5] shadow-xl flex xl:flex-row lg:flex-col md:flex-col sm:flex-col flex-col ${
-          isAnimated
-            ? "animate__animated animate__fadeInUp animate__fast animate__delay-2s"
-            : "invisible"
-        }`}
-      >
-        {" "}
-        <figure>
-          <img src={sbb} className="w-52 mt-10" alt="mayora" />
-        </figure>
-        <div className="card-body text-left">
-          <h2 className="card-title">PT. Solusindo Berkat Bersama</h2>
-          <div className="badge bg-[#27374D] p-2 text-white">
-            Admin Consultant Accounting
+              </text>
+              <text>
+                ● Using Responsive Design in Creating User Interfaces for
+                Websites or Applications
+              </text>
+              <text>
+                ● Ensuring the Designed Program Interface is Aligned with the
+                Provided JSON Data requirements
+              </text>
+            </div>
           </div>
-          <p>September 2018 - September 2019</p>
-          <ul>
-            <li className="flex flex-row gap-3 items-center justify-center">
-              <div className="bg-[#27374D] rounded-full xl:w-3 xl:h-3 lg:w-3 lg:h-3 md:w-3 md:h-3 sm:w-1 sm:h-1 w-1 h-1" />
-              <p>Create a company financial report</p>
-            </li>
-            <li className="flex flex-row gap-3 items-center justify-center">
-              <div className="bg-[#27374D] rounded-full xl:w-3 xl:h-3 lg:w-3 lg:h-3 md:w-3 md:h-3 sm:w-1 sm:h-1 w-1 h-1" />
-              <p>Input data cash, bank, sales, purchase</p>
-            </li>
-            <li className="flex flex-row gap-3 items-center justify-center">
-              <div className="bg-[#27374D] rounded-full xl:w-3 xl:h-3 lg:w-3 lg:h-3 md:w-3 md:h-3 sm:w-1 sm:h-1 w-1 h-1" />
-              <p>Recon (cash, bank, sales, purchase, debit, credit)</p>
-            </li>
-            <li className="flex flex-row gap-3 items-center justify-center">
-              <div className="bg-[#27374D] rounded-full xl:w-3 xl:h-3 lg:w-3 lg:h-3 md:w-3 md:h-3 sm:w-1 sm:h-1 w-1 h-1" />
-              <p>Recon ppn and pph</p>
-            </li>
-            <li className="flex flex-row gap-3 items-center justify-center">
-              <div className="bg-[#27374D] rounded-full xl:w-3 xl:h-3 lg:w-3 lg:h-3 md:w-3 md:h-3 sm:w-1 sm:h-1 w-1 h-1" />
-              <p>Salary recap</p>
-            </li>
-            <li className="flex flex-row gap-3 items-center justify-center">
-              <div className="bg-[#27374D] rounded-full xl:w-3 xl:h-3 lg:w-3 lg:h-3 md:w-3 md:h-3 sm:w-1 sm:h-1 w-1 h-1" />
-              <p>Posting journal</p>
-            </li>
-          </ul>
+          <div className="carousel xl:w-[40%] lg:w-[40%] md:w-full sm:w-full w-full">
+            <div
+              id="slide1"
+              className="carousel-item justify-center relative w-full"
+            >
+              <img src={kloverkres1} className="w-[90%]" />
+              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" className="btn btn-circle">
+                  ❮
+                </a>
+                <a href="#slide2" className="btn btn-circle">
+                  ❯
+                </a>
+              </div>
+            </div>
+            <div
+              id="slide2"
+              className="carousel-item items-center justify-center relative w-full"
+            >
+              <img src={kloverkres2} className="w-[60%] h-[100%]" />
+              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" className="btn btn-circle">
+                  ❮
+                </a>
+                <a href="#slide3" className="btn btn-circle">
+                  ❯
+                </a>
+              </div>
+            </div>
+            <div
+              id="slide3"
+              className="carousel-item justify-center relative w-full"
+            >
+              <img src={kloverkres3} className="w-[60%] h-[100%]" />
+              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" className="btn btn-circle">
+                  ❮
+                </a>
+                <a href="#slide1" className="btn btn-circle">
+                  ❯
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+        {/* end ksi */}
+
+        {/* Mayora indah tbk */}
+        <div className="flex text-left mt-20 gap-10 xl:justify-between lg:justify-between md:justify-center sm:justify-center justify-center xl:flex-row lg:flex-row md:flex-col: sm:flex-col: flex-col">
+          <div className="flex xl:max-w-[60%] lg:max-w-[60%] md:max-w-none sm:max-w-none max-w-none flex-col gap-5">
+            <div className="flex flex-col">
+              <text className="text-black font-bold text-3xl">
+                PT. Mayora Indah Tbk
+              </text>
+              <text className="text-black">November 2019 - November 2022</text>
+            </div>
+            <text className="text-black font-semibold text-justify">
+              This is one of the most comfortable offices I have worked in. I
+              worked here from November 2019 until November 2022 as a GL
+              Accounting staff. During my time here, I was also studying in
+              college. Some of the tasks I performed here included:
+            </text>
+            <div className="flex text-black font-semibold flex-col gap-2">
+              <text>● Create Financial Report</text>
+              <text>● Checking payment voucher documents</text>
+              <text>● Recon all account</text>
+              <text>● process voucher payment Salary, BPJS, and Jamsostek</text>
+              <text>● Make a letter of approval for SPT reporting</text>
+              <text>● Recon pph 21, 23, 4(2)</text>
+              <text>● Posting Journal</text>
+            </div>
+          </div>
+          <div className="carousel xl:w-[40%] lg:w-[40%] md:w-full sm:w-full w-full">
+            <div
+              id="slidemayora1"
+              className="carousel-item justify-center relative w-full"
+            >
+              <img src={mayora1} className="w-[90%] object-contain" />
+              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slidemayora4" className="btn btn-circle">
+                  ❮
+                </a>
+                <a href="#slidemayora2" className="btn btn-circle">
+                  ❯
+                </a>
+              </div>
+            </div>
+            <div
+              id="slidemayora2"
+              className="carousel-item items-center justify-center relative w-full"
+            >
+              <img src={mayora2} className="w-[90%] h-[100%] object-contain" />
+              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slidemayora1" className="btn btn-circle">
+                  ❮
+                </a>
+                <a href="#slidemayora3" className="btn btn-circle">
+                  ❯
+                </a>
+              </div>
+            </div>
+            <div
+              id="slidemayora3"
+              className="carousel-item justify-center relative w-full"
+            >
+              <img src={mayora3} className="w-[60%] h-[100%] object-contain" />
+              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slidemayora2" className="btn btn-circle">
+                  ❮
+                </a>
+                <a href="#slidemayora4" className="btn btn-circle">
+                  ❯
+                </a>
+              </div>
+            </div>
+            <div
+              id="slidemayora4"
+              className="carousel-item justify-center relative w-full"
+            >
+              <img src={mayora4} className="w-[60%] h-[100%] object-contain" />
+              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slidemayora3" className="btn btn-circle">
+                  ❮
+                </a>
+                <a href="#slidemayora1" className="btn btn-circle">
+                  ❯
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* end mayora indah tbk */}
+
+        {/* sbb */}
+        <div className="flex text-left mt-20 gap-10 xl:justify-between lg:justify-between md:justify-center sm:justify-center justify-center xl:flex-row lg:flex-row md:flex-col: sm:flex-col: flex-col">
+          <div className="flex xl:max-w-[60%] lg:max-w-[60%] md:max-w-none sm:max-w-none max-w-none flex-col gap-5">
+            <div className="flex flex-col">
+              <text className="text-black font-bold text-3xl">
+                PT. Solusindo Berkat Bersama
+              </text>
+              <text className="text-black">September 2018 - October 2019</text>
+            </div>
+            <text className="text-black font-semibold text-justify">
+              This is the first place I have worked and also the first place
+              where I learned accounting. Although my background is in computer
+              engineering and networking from vocational high school, while
+              working at this office, I was able to learn accounting from my
+              colleagues here. In this office, I hold the position of a staff
+              accountant and have been working here from September 2018 until
+              October 2023. Some tasks that I have been doing here are:
+            </text>
+            <div className="flex text-black font-semibold flex-col gap-2">
+              <text>● Create a company financial report</text>
+              <text>● Input data cash, bank, sales, purchase</text>
+              <text>● Recon (cash, bank, sales, purchase, debit, credit)</text>
+              <text>● Recon ppn dan pph</text>
+              <text>● Salary recap</text>
+              <text>● Posting journal</text>
+            </div>
+          </div>
+          <div className="carousel xl:w-[40%] lg:w-[40%] md:w-full sm:w-full w-full">
+            <div
+              id="slidesbb1"
+              className="carousel-item justify-center relative w-full"
+            >
+              <img src={sbb1} className="w-[90%] object-contain" />
+              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slidesbb3" className="btn btn-circle">
+                  ❮
+                </a>
+                <a href="#slidesbb2" className="btn btn-circle">
+                  ❯
+                </a>
+              </div>
+            </div>
+            <div
+              id="slidesbb2"
+              className="carousel-item items-center justify-center relative w-full"
+            >
+              <img src={sbb2} className="w-[90%] object-contain h-[100%]" />
+              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slidesbb1" className="btn btn-circle">
+                  ❮
+                </a>
+                <a href="#slidesbb3" className="btn btn-circle">
+                  ❯
+                </a>
+              </div>
+            </div>
+            <div
+              id="slidesbb3"
+              className="carousel-item justify-center relative w-full"
+            >
+              <img src={sbb3} className="w-[90%] object-contain h-[100%]" />
+              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slidesbb2" className="btn btn-circle">
+                  ❮
+                </a>
+                <a href="#slidesbb1" className="btn btn-circle">
+                  ❯
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* end sbb */}
       </div>
-    </>
+    </div>
   )
 }

@@ -1,13 +1,12 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import { NavigationBar } from "../../components"
-import {
-  AboutMe,
-  Education,
-  Experience,
-  Skill,
-  TeamworkSkill,
-} from "./components"
+import { AboutMe } from "./components"
 import { useEffect, useState } from "react"
+import { Education } from "./components"
+import { Experience } from "./components"
+
+// import { yadikaLogo } from "../../assets/ydklogo.png"
 
 export function ProfilePage() {
   const [isEducation, SetIsEducation] = useState(false)
@@ -38,11 +37,8 @@ export function ProfilePage() {
       <NavigationBar />
       <div className="flex flex-col items-start w-screen h-full">
         <AboutMe />
-        <Education isAnimated={isEducation} />
-        <Experience isAnimated={isExperience} />
-        <Skill isAnimated={isCodeSkill} />
-        <TeamworkSkill isAnimated={isTeamWork} />
-        {/* <Experience /> */}
+        <Education />
+        <Experience />
       </div>
     </div>
   )

@@ -36,7 +36,7 @@ export function AboutMe() {
         <div className="max-w-2xl ">
           <h1 className="mb-5 text-5xl font-bold">About Me</h1>
           <p className="mb-5 text-justify">
-            my name is Yanson. I am a graduate of Bunda Mulia University
+            My name is Yanson. I am a graduate of Bunda Mulia University
             majoring in Informatics. Currently, I have experience as a Frontend
             Developer. Some of the programming languages that I have mastered
             include TypeScript, Next.Js, React.JS, and React Native. As for CSS,
