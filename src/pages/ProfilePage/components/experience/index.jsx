@@ -22,9 +22,7 @@ export function Experience() {
       <div className="flex flex-col w-full xl:px-20 lg:px-20 md:px-10 sm:px-5 px-1">
         <div className="flex flex-row items-cente justify-center gap-4">
           <BsFillBuildingsFill color="black" size={35} />
-          <text className="text-5xl font-bold text-black">
-            Work Experiences
-          </text>
+          <text className="text-5xl font-bold text-black">Experiences</text>
         </div>
 
         {/* ksi */}
