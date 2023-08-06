@@ -60,7 +60,7 @@ export function Experience() {
               id="slide1"
               className="carousel-item justify-center relative w-full"
             >
-              <img src={kloverkres1} className="w-[90%]" />
+              <img src={kloverkres1} className="w-[90%] object-contain" />
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide4" className="btn btn-circle">
                   ❮
@@ -74,7 +74,10 @@ export function Experience() {
               id="slide2"
               className="carousel-item items-center justify-center relative w-full"
             >
-              <img src={kloverkres2} className="w-[60%] h-[100%]" />
+              <img
+                src={kloverkres2}
+                className="w-[60%] h-[100%] object-contain"
+              />
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide1" className="btn btn-circle">
                   ❮
@@ -88,7 +91,10 @@ export function Experience() {
               id="slide3"
               className="carousel-item justify-center relative w-full"
             >
-              <img src={kloverkres3} className="w-[60%] h-[100%]" />
+              <img
+                src={kloverkres3}
+                className="w-[60%] h-[100%] object-contain"
+              />
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide2" className="btn btn-circle">
                   ❮
