@@ -38,7 +38,7 @@ export function Experience() {
             </div>
             <text className="text-black font-semibold text-justify">
               This is the first place where I work in the IT world. I have been
-              working here since November 2020 until now. I hold the position of
+              working here since November 2022 until now. I hold the position of
               a Frontend developer at this office, and some common tasks that I
               do here are:
             </text>
