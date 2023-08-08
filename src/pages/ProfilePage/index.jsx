@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import { NavigationBar } from "../../components"
-import { AboutMe, Skill, TeamworkSkill } from "./components"
+import { AboutMe, Projects, Skill, TeamworkSkill } from "./components"
 import { useEffect, useState } from "react"
 import { Education } from "./components"
 import { Experience } from "./components"
@@ -41,6 +41,7 @@ export function ProfilePage() {
         <Experience />
         <Skill />
         <TeamworkSkill />
+        <Projects />
       </div>
     </div>
   )
