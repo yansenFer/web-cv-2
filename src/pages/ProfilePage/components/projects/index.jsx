@@ -8,12 +8,13 @@ import templatedashboard from "../../../../assets/templatedashboard.png"
 import klinikweb from "../../../../assets/klinikweb.png"
 import firstwebcv from "../../../../assets/firstwebcv.png"
 import dashboardicepose from "../../../../assets/dashboardicepose.png"
+import mobilewithapi from "../../../../assets/mobilewithapi.png"
 
 export function Projects() {
   return (
     <div className="hero min-h-screen bg-[#222831]">
-      <div className="flex flex-col gap-10">
-        <div className="flex flex-row items-cente justify-center gap-2">
+      <div className="flex flex-col items-center justify-center gap-10">
+        <div className="flex flex-row items-center justify-center gap-2">
           <img src={rocket} className="w-10" />
           <text className="text-5xl font-bold text-neutral-content">
             My Projects
@@ -314,6 +315,36 @@ export function Projects() {
             </div>
           </div>
           {/* end dashboard klinik */}
+
+          {/* mobile with api */}
+          <div
+            onClick={() => console.log("trigger")}
+            className="hover:bg-base-300 hover:shadow-lg hover:shadow-black transition-all duration-300 card w-[100%] max-h-[100%] bg-base-200 shadow-xl"
+          >
+            <figure>
+              <img src={mobilewithapi} alt="web Klinik" className="w-[35%]" />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title text-neutral-content font-bold text-left">
+                Trying create mobile apps with intergration API and live search
+              </h2>
+              <h3 className="text-neutral-content text-left">My Own Project</h3>
+            </div>
+            <div className="card-body justify-end">
+              <div className="card-actions mt-5 justify-end">
+                <div className="badge badge-outline py-3 text-neutral-content border-red-600">
+                  React Native
+                </div>
+                <div className="badge badge-outline py-3 text-neutral-content border-cyan-600">
+                  Typescript
+                </div>
+                <div className="badge badge-outline py-3 text-neutral-content border-blue-600">
+                  Native Base
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* end mobile with api */}
         </div>
       </div>
     </div>
