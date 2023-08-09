@@ -7,7 +7,7 @@ import { store } from "./store"
 function App() {
   return (
     <StoreProvider store={store}>
-      <div className="flex flex-col w-full h-full">
+      <div className="flex flex-col scroll w-full h-full">
         {/* section 1 */}
 
         <RouterProvider router={router} />

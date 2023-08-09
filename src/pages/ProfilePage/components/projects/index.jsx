@@ -9,10 +9,23 @@ import klinikweb from "../../../../assets/klinikweb.png"
 import firstwebcv from "../../../../assets/firstwebcv.png"
 import dashboardicepose from "../../../../assets/dashboardicepose.png"
 import mobilewithapi from "../../../../assets/mobilewithapi.png"
+import IsiModal from "./components"
+import { useState } from "react"
 
 export function Projects() {
+  const [projectName, setProjectName] = useState("")
+
+  const handleModal = (value) => {
+    window.modalproject.showModal()
+    console.log(value)
+    setProjectName(value)
+  }
+
   return (
-    <div className="hero min-h-screen bg-[#222831]">
+    <div className="hero min-h-screen max-h-screen bg-[#222831]">
+      <dialog id="modalproject" className="modal">
+        <IsiModal modalproject={projectName} />
+      </dialog>
       <div className="flex flex-col items-center justify-center gap-10">
         <div className="flex flex-row items-center justify-center gap-2">
           <img src={rocket} className="w-10" />
@@ -25,7 +38,7 @@ export function Projects() {
         <div className="grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 mt-10 xl:px-20 lg:px-16 md:px-10 sm:px-5 px-2 gap-10">
           {/* tms-dashboard */}
           <div
-            onClick={() => console.log("trigger")}
+            onClick={() => handleModal("tmsdashboard")}
             className="hover:bg-base-300 hover:shadow-lg hover:shadow-black transition-all duration-300 card w-[100%] max-h-[100%] bg-base-200 shadow-xl"
           >
             <figure>
@@ -41,15 +54,6 @@ export function Projects() {
               </h3>
             </div>
             <div className="card-body">
-              {/* <p className="text-justify text-neutral-content">
-                This is the first project I took on when I started working as a
-                frontend developer. I am the sole member of the frontend team,
-                and in this project I learned about frontend development using
-                the Next.js framework, TypeScript language, and also Restful API
-                services. When I first took over the tms-dashboard, the project
-                was only about 15% complete.
-              </p> */}
-
               <div className="card-actions mt-5 justify-end">
                 <div className="badge badge-outline py-3 text-neutral-content border-red-600">
                   Next.Js
@@ -67,7 +71,7 @@ export function Projects() {
 
           {/* tms-dashboard */}
           <div
-            onClick={() => console.log("trigger")}
+            onClick={() => handleModal("webguehadir")}
             className="hover:bg-base-300 hover:shadow-lg hover:shadow-black transition-all duration-300 card w-[100%] max-h-[100%] bg-base-200 shadow-xl"
           >
             <figure>
@@ -99,7 +103,7 @@ export function Projects() {
 
           {/* dashboard guehadir */}
           <div
-            onClick={() => console.log("trigger")}
+            onClick={() => handleModal("dashboardguehadir")}
             className="hover:bg-base-300 hover:shadow-lg hover:shadow-black transition-all duration-300 card w-[100%] max-h-[100%] bg-base-200 shadow-xl"
           >
             <figure>
@@ -131,7 +135,7 @@ export function Projects() {
 
           {/* icepose */}
           <div
-            onClick={() => console.log("trigger")}
+            onClick={() => handleModal("icepose")}
             className="hover:bg-base-300 hover:shadow-lg hover:shadow-black transition-all duration-300 card w-[100%] max-h-[100%] bg-base-200 shadow-xl"
           >
             <figure>
@@ -139,7 +143,7 @@ export function Projects() {
             </figure>
             <div className="card-body">
               <h2 className="card-title text-neutral-content font-bold text-left">
-                Icepose Apps (Apps for order ice cream at the booth.)
+                Icepose Apps (Apps for order ice cream at the booth)
               </h2>
               <h3 className="text-neutral-content text-left">
                 PT. Kloverkres Solusi Integrasi
@@ -163,7 +167,7 @@ export function Projects() {
 
           {/* web calculator */}
           <div
-            onClick={() => console.log("trigger")}
+            onClick={() => handleModal("webcalculator")}
             className="hover:bg-base-300 hover:shadow-lg hover:shadow-black transition-all duration-300 card w-[100%] max-h-[100%] bg-base-200 shadow-xl"
           >
             <figure>
@@ -172,7 +176,7 @@ export function Projects() {
             <div className="card-body">
               <h2 className="card-title text-neutral-content font-bold text-left">
                 Web Calculator (I was just casually trying to create a web
-                calculator.)
+                calculator)
               </h2>
               <h3 className="text-neutral-content text-left">My Own Project</h3>
             </div>
@@ -194,7 +198,7 @@ export function Projects() {
 
           {/* web calculator */}
           <div
-            onClick={() => console.log("trigger")}
+            onClick={() => handleModal("templatedashboard")}
             className="hover:bg-base-300 hover:shadow-lg hover:shadow-black transition-all duration-300 card w-[100%] max-h-[100%] bg-base-200 shadow-xl"
           >
             <figure>
@@ -224,7 +228,7 @@ export function Projects() {
 
           {/* web dashboard Klinik */}
           <div
-            onClick={() => console.log("trigger")}
+            onClick={() => handleModal("dashboardklinik")}
             className="hover:bg-base-300 hover:shadow-lg hover:shadow-black transition-all duration-300 card w-[100%] max-h-[100%] bg-base-200 shadow-xl"
           >
             <figure>
@@ -256,11 +260,11 @@ export function Projects() {
 
           {/* web dashboard Klinik */}
           <div
-            onClick={() => console.log("trigger")}
+            onClick={() => handleModal("firstwebcv")}
             className="hover:bg-base-300 hover:shadow-lg hover:shadow-black transition-all duration-300 card w-[100%] max-h-[100%] bg-base-200 shadow-xl"
           >
             <figure>
-              <img src={firstwebcv} alt="web Klinik" />
+              <img src={firstwebcv} alt="webcv" />
             </figure>
             <div className="card-body">
               <h2 className="card-title text-neutral-content font-bold text-left">
@@ -286,7 +290,7 @@ export function Projects() {
 
           {/* web dashboard Klinik */}
           <div
-            onClick={() => console.log("trigger")}
+            onClick={() => handleModal("dashboardicepose")}
             className="hover:bg-base-300 hover:shadow-lg hover:shadow-black transition-all duration-300 card w-[100%] max-h-[100%] bg-base-200 shadow-xl"
           >
             <figure>
@@ -318,7 +322,7 @@ export function Projects() {
 
           {/* mobile with api */}
           <div
-            onClick={() => console.log("trigger")}
+            onClick={() => handleModal("firstmobileapps")}
             className="hover:bg-base-300 hover:shadow-lg hover:shadow-black transition-all duration-300 card w-[100%] max-h-[100%] bg-base-200 shadow-xl"
           >
             <figure>
