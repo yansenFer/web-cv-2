@@ -33,16 +33,18 @@ export function ProfilePage() {
   })
 
   return (
-    <div className="bg-[#DDE6ED] absolute top-0 right-0 left-0 flex w-full">
+    <>
       <NavigationBar />
-      <div className="flex flex-col items-start min-w-screen h-full">
-        <AboutMe />
-        <Education />
-        <Experience />
-        <Skill />
-        <TeamworkSkill />
-        <Projects />
+      <div className="bg-[#DDE6ED] absolute top-0 flex justify-center items-center w-full">
+        <div className="flex flex-col items-start min-w-screen max-w-[1920px] h-full">
+          <AboutMe />
+          <Education />
+          <Experience />
+          <Skill />
+          <TeamworkSkill />
+          <Projects />
+        </div>
       </div>
-    </div>
+    </>
   )
 }
