@@ -14,7 +14,7 @@ export function ContactsPage() {
   }
 
   return (
-    <section id="contactme" className="hero min-h-screen">
+    <section id="contactme" className="hero min-h-screen mb-20">
       <div className="flex flex-col w-full xl:px-20 lg:px-20 md:px-10 sm:px-5 px-1">
         <div className="flex flex-row items-cente mt-20 justify-center gap-4">
           <AiFillContacts color="black" size={40} />
@@ -23,22 +23,22 @@ export function ContactsPage() {
         <h3 className="text-black mt-5 font-semibold">
           This is my contact , you can click on the image below.
         </h3>
-        <text className="flex flex-row gap-10 justify-center items-center mt-10">
+        <div className="flex xl:flex-row lg:flex-row md:flex-col sm:flex-col flex-col gap-10 justify-center items-center mt-10">
           <div
             id="whatsapp"
             onClick={(e) => setContactId(e.currentTarget.id)}
-            className="bg-[#222831] max-w-[10%] max-h-[10%] p-5 rounded-lg hover:bg-gray-900 transition-all duration-300 "
+            className="bg-[#222831]  p-5 rounded-lg hover:bg-gray-900 transition-all duration-300 "
           >
             <img src={whatsapp} className="w-10 h-10" />
           </div>
           <div
             id="gmail"
             onClick={(e) => setContactId(e.currentTarget.id)}
-            className="bg-[#222831]  max-w-[10%] max-h-[10%] p-5 rounded-lg hover:bg-gray-900 transition-all duration-300 "
+            className="bg-[#222831]  p-5 rounded-lg hover:bg-gray-900 transition-all duration-300 "
           >
             <img src={gmail} className="w-12 h-10" />
           </div>
-        </text>
+        </div>
         <div className="mt-20">
           {contactId && contactId === "whatsapp" ? (
             <button
