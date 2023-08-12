@@ -22,7 +22,7 @@ export function Projects() {
   }
 
   return (
-    <div className="hero min-h-screen max-h-screen bg-[#222831]">
+    <section id="projects" className="hero min-h-screen pb-32 bg-[#222831]">
       <dialog id="modalproject" className="modal">
         <IsiModal modalproject={projectName} />
       </dialog>
@@ -351,6 +351,6 @@ export function Projects() {
           {/* end mobile with api */}
         </div>
       </div>
-    </div>
+    </section>
   )
 }

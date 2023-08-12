@@ -35,6 +35,15 @@ export const NavigationBar = ({ children }) => {
     }
   }, [])
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      const headerOffset = 100 // Anda bisa menyesuaikan offset ini sesuai dengan kebutuhan
+      const elementPosition = element.offsetTop - headerOffset
+      window.scrollTo({ top: elementPosition, behavior: "smooth" })
+    }
+  }
+
   return (
     <div className="flex flex-col">
       {isMobileView ? (
@@ -46,7 +55,7 @@ export const NavigationBar = ({ children }) => {
             <button onClick={() => router("/ProfilePage")}>
               <AiOutlineUser size={25} />
             </button>
-            <button onClick={() => router("/ProjectPage")}>
+            <button onClick={() => scrollToSection("projects")}>
               <BsPersonWorkspace size={25} />
             </button>
             <button>
@@ -85,7 +94,7 @@ export const NavigationBar = ({ children }) => {
                 Profile
               </button>
               <button
-                onClick={() => router("/ProjectPage")}
+                onClick={() => scrollToSection("projects")}
                 className="font-medium hover:shadow-inner hover:border-b-4 duration-75 transition-all hover:border-[#222831] w-full h-full py-5 px-5 hover:shadow-gray-950"
               >
                 Projects

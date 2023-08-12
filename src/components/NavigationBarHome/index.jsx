@@ -78,15 +78,6 @@ export const NavigationBarHome = ({ children }) => {
               >
                 Profile
               </button>
-              <button
-                onClick={() => router("/ProjectPage")}
-                className="font-medium hover:shadow-inner duration-300 w-full h-full py-5 px-5 hover:shadow-gray-950"
-              >
-                Projects
-              </button>
-              <button className="font-medium hover:shadow-inner duration-300 w-full h-full py-5 px-5 hover:shadow-gray-950">
-                Contact
-              </button>
             </div>
             {/* end menu */}
           </div>
