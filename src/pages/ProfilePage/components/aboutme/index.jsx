@@ -27,7 +27,8 @@ export function AboutMe() {
   }
 
   return (
-    <div
+    <section
+      id="aboutme"
       className="hero min-h-screen animate__animated animate__fadeInDown "
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
@@ -74,6 +75,6 @@ export function AboutMe() {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

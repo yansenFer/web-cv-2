@@ -35,13 +35,17 @@ export const NavigationBar = ({ children }) => {
     }
   }, [])
 
-  const scrollToSection = (sectionId) => {
+  const scrollToSection = (sectionId, margintop) => {
     const element = document.getElementById(sectionId)
     if (element) {
-      const headerOffset = 100 // Anda bisa menyesuaikan offset ini sesuai dengan kebutuhan
+      const headerOffset = margintop
       const elementPosition = element.offsetTop - headerOffset
       window.scrollTo({ top: elementPosition, behavior: "smooth" })
     }
+  }
+
+  const handleProfile = () => {
+    router("/ProfilePage"), scrollToSection("aboutme", 0)
   }
 
   return (
@@ -52,13 +56,13 @@ export const NavigationBar = ({ children }) => {
             <button onClick={() => router("/")}>
               <AiOutlineHome size={25} />
             </button>
-            <button onClick={() => router("/ProfilePage")}>
+            <button onClick={() => handleProfile()}>
               <AiOutlineUser size={25} />
             </button>
-            <button onClick={() => scrollToSection("projects")}>
+            <button onClick={() => scrollToSection("projects", 100)}>
               <BsPersonWorkspace size={25} />
             </button>
-            <button>
+            <button onClick={() => scrollToSection("contactme", 0)}>
               <AiOutlineContacts size={25} />
             </button>
           </div>
@@ -89,17 +93,20 @@ export const NavigationBar = ({ children }) => {
               </button>
               <button
                 className="font-medium hover:shadow-inner hover:border-b-4 duration-75 transition-all hover:border-[#222831] w-full h-full py-5 px-5 hover:shadow-gray-950"
-                onClick={() => router("/ProfilePage")}
+                onClick={() => handleProfile()}
               >
                 Profile
               </button>
               <button
-                onClick={() => scrollToSection("projects")}
+                onClick={() => scrollToSection("projects", 100)}
                 className="font-medium hover:shadow-inner hover:border-b-4 duration-75 transition-all hover:border-[#222831] w-full h-full py-5 px-5 hover:shadow-gray-950"
               >
                 Projects
               </button>
-              <button className="font-medium hover:shadow-inner hover:border-b-4 duration-75 transition-all hover:border-[#222831] w-full h-full py-5 px-5 hover:shadow-gray-950">
+              <button
+                onClick={() => scrollToSection("contactme", 0)}
+                className="font-medium hover:shadow-inner hover:border-b-4 duration-75 transition-all hover:border-[#222831] w-full h-full py-5 px-5 hover:shadow-gray-950"
+              >
                 Contact
               </button>
             </div>
