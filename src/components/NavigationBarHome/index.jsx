@@ -43,12 +43,6 @@ export const NavigationBarHome = ({ children }) => {
             <button onClick={() => router("/ProfilePage")}>
               <AiOutlineUser size={25} />
             </button>
-            <button onClick={() => router("/ProjectPage")}>
-              <BsPersonWorkspace size={25} />
-            </button>
-            <button>
-              <AiOutlineContacts size={25} />
-            </button>
           </div>
         </>
       ) : (
