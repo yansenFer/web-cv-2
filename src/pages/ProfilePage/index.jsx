@@ -41,8 +41,8 @@ export function ProfilePage() {
   return (
     <>
       <NavigationBar />
-      <div className="bg-[#DDE6ED] absolute top-0 flex justify-center items-center w-full">
-        <div className="flex flex-col items-start min-w-screen max-w-[1920px] h-full">
+      <div className="bg-[#DDE6ED] absolute flex min-w-screen justify-center items-center xl:w-full md:w-full lg:w-full sm:w-full w-auto">
+        <div className="flex flex-col items-start max-w-[1920px] h-full">
           <AboutMe />
           <Education />
           <Experience />
