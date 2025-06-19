@@ -1,20 +1,20 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 
-import kloverkres1 from "../../../../assets/kloverkres2.jpg"
-import kloverkres2 from "../../../../assets/kloverkres1.jpeg"
-import kloverkres3 from "../../../../assets/kloverkres3.jpg"
+import kloverkres1 from '../../../../assets/kloverkres2.jpg'
+import kloverkres2 from '../../../../assets/kloverkres1.jpeg'
+import kloverkres3 from '../../../../assets/kloverkres3.jpg'
 
-import mayora1 from "../../../../assets/mayora1.jpg"
-import mayora2 from "../../../../assets/mayora2.jpg"
-import mayora3 from "../../../../assets/mayora3.jpg"
-import mayora4 from "../../../../assets/mayora4.jpg"
+import mayora1 from '../../../../assets/mayora1.jpg'
+import mayora2 from '../../../../assets/mayora2.jpg'
+import mayora3 from '../../../../assets/mayora3.jpg'
+import mayora4 from '../../../../assets/mayora4.jpg'
 
-import sbb1 from "../../../../assets/sbb1.jpg"
-import sbb2 from "../../../../assets/sbb2.jpg"
-import sbb3 from "../../../../assets/sbb3.jpg"
+import sbb1 from '../../../../assets/sbb1.jpg'
+import sbb2 from '../../../../assets/sbb2.jpg'
+import sbb3 from '../../../../assets/sbb3.jpg'
 
-import { BsFillBuildingsFill } from "react-icons/bs"
+import { BsFillBuildingsFill } from 'react-icons/bs'
 
 export function Experience() {
   return (
@@ -24,7 +24,6 @@ export function Experience() {
           <BsFillBuildingsFill color="black" size={35} />
           <text className="text-5xl font-bold text-black">Experiences</text>
         </div>
-
         {/* ksi */}
         <div className="flex mt-10 text-left gap-10 xl:justify-between lg:justify-between md:justify-center sm:justify-center justify-center xl:flex-row lg:flex-row md:flex-col: sm:flex-col: flex-col">
           <div className="flex xl:max-w-[60%] lg:max-w-[60%] md:max-w-none sm:max-w-none max-w-none flex-col gap-5">
@@ -36,26 +35,32 @@ export function Experience() {
                 November 2022 - Still working here
               </text>
             </div>
-            <text className="text-black font-semibold text-justify">
-              This is the first place where I work in the IT world. I have been
-              working here since November 2022 until now. I hold the position of
-              a Frontend developer at this office, and some common tasks that I
-              do here are:
-            </text>
             <div className="flex text-black font-semibold flex-col gap-2">
-              <text>● Implement Design to Mobile Application</text>
               <text>
-                ● Creating a Website Dashboard Page based on JSON Data from
-                Backend
+                ● Built and maintained responsive web and mobile applications
+                using React.js, Next.js, React Native, and TypeScript, following
+                component based architecture and clean code principles.
               </text>
               <text>
-                ● Using Responsive Design in Creating User Interfaces for
-                Websites or Applications
+                ● Implemented user interface designs based on the UI/UX
+                specifications using Tailwind CSS or Chakra UI.
               </text>
-              <text>
-                ● Ensuring the Designed Program Interface is Aligned with the
-                Provided JSON Data requirements
-              </text>
+              <span>
+                ● Integrated REST APIs, handling efficient data fetching via
+                React Query
+              </span>
+              <span>
+                ● Managed application state using React Context and Redux,
+                optimized for both web and mobile platforms.
+              </span>
+              <span>
+                ● Added new features based on product requirements, improving
+                overall user engagement.
+              </span>
+              <span>
+                ● Identified and fixed visual and functional issues in the
+                application, ensuring a smooth user experience.
+              </span>
             </div>
           </div>
           <div className="carousel xl:w-[40%] lg:w-[40%] md:w-full sm:w-full w-full">
@@ -64,8 +69,8 @@ export function Experience() {
               className="carousel-item justify-center relative w-full"
             >
               <img src={kloverkres1} className="w-[90%] object-contain" />
-              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide4" className="btn btn-circle">
+              <div className="absolute flex justify-between transform  left-5 right-5 top-1/2">
+                <a href="#slide3" className="btn btn-circle">
                   ❮
                 </a>
                 <a href="#slide2" className="btn btn-circle">
@@ -110,7 +115,6 @@ export function Experience() {
           </div>
         </div>
         {/* end ksi */}
-
         {/* Mayora indah tbk */}
         <div className="flex text-left mt-20 gap-10 xl:justify-between lg:justify-between md:justify-center sm:justify-center justify-center xl:flex-row lg:flex-row md:flex-col: sm:flex-col: flex-col">
           <div className="flex xl:max-w-[60%] lg:max-w-[60%] md:max-w-none sm:max-w-none max-w-none flex-col gap-5">
@@ -196,7 +200,6 @@ export function Experience() {
           </div>
         </div>
         {/* end mayora indah tbk */}
-
         {/* sbb */}
         <div className="flex text-left mt-20 gap-10 xl:justify-between lg:justify-between md:justify-center sm:justify-center justify-center xl:flex-row lg:flex-row md:flex-col: sm:flex-col: flex-col">
           <div className="flex xl:max-w-[60%] lg:max-w-[60%] md:max-w-none sm:max-w-none max-w-none flex-col gap-5">

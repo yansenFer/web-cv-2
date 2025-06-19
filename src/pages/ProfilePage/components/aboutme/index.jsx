@@ -1,10 +1,6 @@
 /* eslint-disable no-unused-vars */
+import React, { Suspense } from 'react'
 import backgroundImage from '../../../../assets/backgroundimage.png'
-import {
-  AiOutlineInstagram,
-  AiFillLinkedin,
-  AiFillGithub,
-} from 'react-icons/ai'
 
 export function AboutMe() {
   const sosmedLink = (value) => {
@@ -21,11 +17,35 @@ export function AboutMe() {
     document.body.removeChild(link)
   }
 
+  // Lazy load the social media icons
+  const AiOutlineInstagram = React.lazy(() =>
+    import('react-icons/ai').then((mod) => ({
+      default: mod.AiOutlineInstagram,
+    }))
+  )
+  const AiFillLinkedin = React.lazy(() =>
+    import('react-icons/ai').then((mod) => ({ default: mod.AiFillLinkedin }))
+  )
+  const AiFillGithub = React.lazy(() =>
+    import('react-icons/ai').then((mod) => ({ default: mod.AiFillGithub }))
+  )
+
+  // Lazy load the background image
+  const [bgImage, setBgImage] = React.useState(null)
+
+  React.useEffect(() => {
+    const img = new window.Image()
+    img.src = backgroundImage
+    img.onload = () => setBgImage(backgroundImage)
+  }, [])
+
   return (
     <section
       id="aboutme"
       className="hero min-h-screen animate__animated animate__fadeInDown "
-      style={{ backgroundImage: `url(${backgroundImage})` }}
+      style={{
+        backgroundImage: bgImage ? `url(${bgImage})` : 'none',
+      }}
     >
       <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content text-center text-neutral-content">
@@ -45,27 +65,31 @@ export function AboutMe() {
           <div className="flex flex-col items-center justify-center mt-14">
             <p className="mb-5 font-bold text-xl">My Social Media: </p>
             <div className="flex flex-row gap-5">
-              <button
-                onClick={() =>
-                  sosmedLink('https://www.instagram.com/yansen.fer/')
-                }
-              >
-                <AiOutlineInstagram size={36} />
-              </button>
-              <button
-                onClick={() => {
-                  sosmedLink('https://www.linkedin.com/in/yanson-f-188521168/')
-                }}
-              >
-                <AiFillLinkedin size={36} />
-              </button>
-              <button
-                onClick={() => {
-                  sosmedLink('https://github.com/yansenFer')
-                }}
-              >
-                <AiFillGithub size={36} />
-              </button>
+              <Suspense fallback={<div>Loading...</div>}>
+                <button
+                  onClick={() =>
+                    sosmedLink('https://www.instagram.com/yansen.fer/')
+                  }
+                >
+                  <AiOutlineInstagram size={36} />
+                </button>
+                <button
+                  onClick={() => {
+                    sosmedLink(
+                      'https://www.linkedin.com/in/yanson-f-188521168/'
+                    )
+                  }}
+                >
+                  <AiFillLinkedin size={36} />
+                </button>
+                <button
+                  onClick={() => {
+                    sosmedLink('https://github.com/yansenFer')
+                  }}
+                >
+                  <AiFillGithub size={36} />
+                </button>
+              </Suspense>
             </div>
           </div>
           <button className="btn btn-outline mt-10" onClick={downloadCV}>
